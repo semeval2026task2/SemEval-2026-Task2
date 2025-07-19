@@ -15,7 +15,6 @@ export function useStackEdit(filePath: string) {
       const md = file.content.text;
       onChangeLocal(md);                       // update preview immediately
 
-      // 🔐 save to server
       await fetch("/api/save", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

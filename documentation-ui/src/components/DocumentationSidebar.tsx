@@ -16,31 +16,31 @@ interface DocumentationSidebarProps {
 }
 
 export const navItems: NavItem[] = [
-  { title: 'Overview', file: 'src/docs/overview/overview.md',
+  { title: 'Overview', file: '/docs/overview/overview.md',
   },
   {
-    title: "Data & Resources", file: "src/docs/data/data.md",
+    title: "Data & Resources", file: "/docs/data/data.md",
     children: [
-      { title: "Data Overview", file: "src/docs/data/data-overview.md" },
-      { title: "Data Quality and Dataset Structure", file: "src/docs/data/data-quality.md" },
-      { title: "Risk and Ethics Statement", file: "src/docs/data/risk-and-ethics.md" },
+      { title: "Data Overview", file: "/docs/data/data-overview.md" },
+      { title: "Data Quality and Dataset Structure", file: "/docs/data/data-quality.md" },
+      { title: "Risk and Ethics Statement", file: "/docs/data/risk-and-ethics.md" },
     ]
   },
 
 
   {
-    title: "Pilot Task", file: "src/docs/pilot-task/pilot-task.md",
+    title: "Pilot Task", file: "/docs/pilot-task/pilot-task.md",
   },
   {
-    title: "Evaluation", file: "src/docs/evaluation/evaluation.md",
+    title: "Evaluation", file: "/docs/evaluation/evaluation.md",
     children: [
-      { title: "Evaluation Overview", file: "src/docs/evaluation/evaluation-overview.md" },
-      { title: "Subtask 1", file: "src/docs/evaluation/subtask1.md" },
-      { title: "Subtask 2", file: "src/docs/evaluation/subtask2.md" }
+      { title: "Evaluation Overview", file: "/docs/evaluation/evaluation-overview.md" },
+      { title: "Subtask 1", file: "/docs/evaluation/subtask1.md" },
+      { title: "Subtask 2", file: "/docs/evaluation/subtask2.md" }
     ]
   },
   {
-    title: "Task Organizers", file: "src/docs/organizers.md"
+    title: "Task Organizers", file: "/docs/organizers.md"
   }
 ];
 

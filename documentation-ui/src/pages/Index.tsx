@@ -7,7 +7,7 @@ import { navItems } from "@/components/DocumentationSidebar"; // export navItems
 
 export default function Index() {
   /* which file is currently displayed in the main pane */
-  const [activeFile, setActiveFile] = useState("src/docs/overview/overview.md");
+  const [activeFile, setActiveFile] = useState("/docs/overview/overview.md");
 
   /* sidebar open / close (mobile) */
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

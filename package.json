@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "scripts": {
+  "dev": "concurrently \"npm --prefix documentation-ui run dev\" \"npm --prefix server run dev\""
+}
+}
