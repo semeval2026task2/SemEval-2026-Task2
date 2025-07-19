@@ -10,7 +10,7 @@ import saveRouter from "./routes/save.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app  = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8000;
 
 app.use((req, res, next) => {
   console.log("→", req.method, req.path);

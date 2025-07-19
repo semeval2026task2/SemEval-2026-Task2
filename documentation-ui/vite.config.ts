@@ -7,11 +7,11 @@ export default defineConfig(({ mode }) => ({
   // ---------- server settings ----------
   server: {
     host: "::",
-    port: 4000,
+    port: 3000,
     proxy: {
-      "/api": "http://localhost:4000",
+      "/api": "http://localhost:8000",
       "/docs": {
-        target: "http://localhost:4000",
+        target: "http://localhost:8000",
         changeOrigin: true,
         cookieDomainRewrite: "localhost",   // strips the original cookie domain
         cookiePathRewrite: { "/": "/" },    // keeps paths sane
