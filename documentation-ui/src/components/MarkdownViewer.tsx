@@ -1,24 +1,22 @@
-import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkFootnotes from 'remark-footnotes';
+import { useEffect, useState } from 'react';
 import { useStackEdit } from '@/hooks/useStackEdit';
 
 export default function MarkdownViewer({ file }: { file: string }) {
-  const [md, setMd]   = useState<string>('Loading…');
-  const openEditor = useStackEdit(file); 
+  const [md, setMd] = useState<string>('Loading…');
+  const openEditor   = useStackEdit(file);
 
-  // fetch the file whenever the sidebar selection changes
   useEffect(() => {
     fetch(file)
-    .then(r => {
-        const ct = r.headers.get('content-type') || '';
-        if (ct.includes('text/html')) {
-        throw new Error(`File not found: ${file}`);
+      .then(async r => {
+        if (!(r.ok && r.headers.get('content-type')?.includes('text'))) {
+          throw new Error(`File not found: ${file}`);
         }
-
-        return r.text();
-    })
-    .then(setMd)
-    .catch(err => setMd(`# 404\n\n${err.message}`));
+        setMd(await r.text());
+      })
+      .catch(err => setMd(`# 404\n\n${err.message}`));
   }, [file]);
 
   return (
@@ -32,7 +30,15 @@ export default function MarkdownViewer({ file }: { file: string }) {
         </button>
       </div>
 
-      <ReactMarkdown>{md}</ReactMarkdown>
+      {/* 👉 add remarkPlugins */}
+      <ReactMarkdown
+        remarkPlugins={[
+          remarkGfm,
+          [remarkFootnotes, { inlineNotes: false }], // false → classic footnote block; true → inline pop‑ins
+        ]}
+      >
+        {md}
+      </ReactMarkdown>
     </article>
   );
 }

@@ -33,7 +33,9 @@ export default function Index() {
 
         {/* main markdown viewer */}
         <main className="flex-1 overflow-auto px-6 py-8 md:px-8">
-          <MarkdownViewer file={activeFile} />
+          <div className="mx-auto max-w-5xl">
+            <MarkdownViewer file={activeFile} />
+          </div>
         </main>
       </div>
     </div>

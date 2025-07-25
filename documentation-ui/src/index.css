@@ -99,4 +99,7 @@
   body {
     @apply bg-background text-foreground;
   }
+  .prose .footnotes {
+  @apply mt-8 text-sm text-gray-600 border-t pt-4;
+}
 }
