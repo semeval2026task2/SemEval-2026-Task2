@@ -6,7 +6,7 @@ interface DocumentationHeaderProps {
 
 const DocumentationHeader = ({ onMenuClick }: DocumentationHeaderProps) => {
   return (
-    <header className="h-14 bg-header text-primary-foreground px-4 flex items-center justify-between border-b">
+    <header className="fixed top-0 left-0 right-0 h-14 bg-primary z-50 flex items-center md:ml-64">
       {/* Left side - Menu button and branding */}
       <div className="flex items-center">
         <button
