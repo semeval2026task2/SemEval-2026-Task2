@@ -1,8 +1,7 @@
 # Getting Started
 ---
 1. **Register (Now – 15 Jul 2025)**  
-   To participate, please register using this   
-   **[Registration Form](#)**.  
+   To participate, please register using this **[Registration Form](#)**.  
    Teams may tackle one or both prediction subtasks.
 
 2. **Sample & Training Data Released (15 Jul 2025 – 1 Sep 2025)**  
