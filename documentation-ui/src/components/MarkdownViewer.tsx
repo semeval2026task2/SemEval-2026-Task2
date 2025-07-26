@@ -11,10 +11,15 @@ import 'katex/dist/katex.min.css';
 export default function MarkdownViewer({ file }: { file: string }) {
   const [md, setMd] = useState<string>('Loading…');
   const openEditor  = useStackEdit(); // ← new hook (3‑arg signature)
-
+  function withBase(path: string) {
+    const base = import.meta.env.BASE_URL;        // "/" or "/SemEval-2026/"
+    return base + path.replace(/^\/+/, '');       // strip leading slash(es)
+  }
   /* pull the Markdown whenever the path changes */
   useEffect(() => {
-    fetch(file)
+    const url = withBase(file);
+    console.debug(`Fetching Markdown from: ${url}`);
+    fetch(url)
       .then(async r => {
         if (!(r.ok && r.headers.get('content-type')?.includes('text'))) {
           throw new Error(`File not found: ${file}`);

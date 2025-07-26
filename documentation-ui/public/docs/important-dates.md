@@ -1,0 +1,11 @@
+# Important Dates
+---
+- ~~Sample data: 15 July 2025~~
+- Training data: 1 September 2025
+- Evaluation data: 1 December 2025 *(internal milestone; not for public release)*
+- Evaluation **start**: 10 January 2026
+- Evaluation **end**: by **31 January 2026** *(latest; organizers may close earlier)*
+- Paper submission **due**: February 2026
+- Notification to authors: March 2026
+- Camera‑ready **due**: April 2026
+- **SemEval workshop**: Summer 2026 *(co‑located with a major NLP conference)*

@@ -4,10 +4,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/SemEval-2026/' : '/',
-  build: {
-    sourcemap: true,           // 👈 add this
-  },
+  base: '/SemEval-2026/',
+  publicDir: 'public',
   // ---------- server settings ----------
   server: {
     host: "::",
