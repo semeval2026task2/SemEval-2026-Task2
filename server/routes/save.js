@@ -18,6 +18,7 @@ router.post("/", async (req, res) => {
   }
 
   const absPath = path.join(docsRoot, filePath.replace(/^\/docs\//, ""));
+  console.log("Save route absPath →", absPath);
   // absPath now: <repo>/docs/overview/overview.md
 
   try {
