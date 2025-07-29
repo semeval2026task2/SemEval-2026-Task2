@@ -2,12 +2,12 @@
 ---
 * Tentative schedule, actual dates to be updated soon
 1. **Register**  
-   To participate, please register using this  **[Registration Form](#)** 
+   To participate, please register using this  **[Registration Form](#)**. 
    Teams may tackle one or both prediction subtasks.
 
 2. **Sample & Training Data Released (Aug 8 2025 – Sep 1 2025)**  
-   * **15 Jul 2025 – Sample set** released so teams can verify pipelines.  
-   * **1 Sep 2025 – Full training set** (essays + gold valence/arousal labels) published.  
+   * **Jul 15 2025 – Sample set** released so teams can verify pipelines.  
+   * **Sep 1 2025 – Full training set** (essays + gold valence/arousal labels) published.  
      External resources are welcomed.
 
 3. **Testing Window (Jan 10 – Jan 31 2026)**  
@@ -25,8 +25,8 @@
    Peer and organizer reviews returned; authors may be asked to clarify or extend analyses.
 
 6. **Camera‑Ready Paper Due (Apr 2026)**  
-   Revise according to feedback and upload final PDF + source files by **late Apr 2026**.
+   Revise according to feedback and upload final PDF + source files by **late Apr 2026**.
 
 7. **Workshop & Results Discussion (Summer 2026)**  
-   Present your work at the our session of **SemEval 2026**,  
+   Present your work at the our session of **SemEval 2026**,  
    co‑located with a major NLP conference (venue TBA).
