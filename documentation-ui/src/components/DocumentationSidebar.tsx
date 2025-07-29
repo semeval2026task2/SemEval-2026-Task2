@@ -17,7 +17,7 @@ interface DocumentationSidebarProps {
 
 /* ----------------- YOUR NAV TREE ----------------- */
 export const navItems: NavItem[] = [
-  { title: 'Introduction', file: '/docs/overview/overview.md' },
+  { title: 'Overview', file: '/docs/overview/overview.md' },
   { title: 'Getting Started', file: '/docs/participate.md' },
   {
     title: 'Tasks',
@@ -94,7 +94,7 @@ const DocumentationSidebar = ({
           SemEval 2026
         </span>
         <span className="text-xs leading-tight text-foreground/70">
-          Task: Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
+          Task 2: Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
         </span>
       </div>
         {/* Navigation */}

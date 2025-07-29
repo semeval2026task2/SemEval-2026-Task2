@@ -1,8 +1,8 @@
 # Getting Started
 ---
+* Tentative schedule, actual dates to be updated soon
 1. **Register (Now – 15 Jul 2025)**  
-   To participate in **Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays** (PromiseEval‑Valence & Arousal), please register using this   
-   **[Registration Form](#)**.  
+   To participate, please register using this  **[Registration Form](#)**.  
    Teams may tackle one or both prediction subtasks.
 
 2. **Sample & Training Data Released (15 Jul 2025 – 1 Sep 2025)**  
@@ -32,5 +32,5 @@
    Revise according to feedback and upload final PDF + source files by **late Apr 2026**.
 
 8. **Workshop & Results Discussion (Summer 2026)**  
-   Present your work at the PromiseEval session of **SemEval 2026**,  
+   Present your work at the our session of **SemEval 2026**,  
    co‑located with a major NLP conference (venue TBA).

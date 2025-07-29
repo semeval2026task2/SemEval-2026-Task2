@@ -1,4 +1,4 @@
-# Introduction
+# Overview
 ---
 Emotions are a fundamental aspect of human expression.  
 The widely used *affective circumplex model* proposes that all emotions can be described as points in a two‑dimensional space defined by **valence** (pleasantness) and **arousal** (activation) (Russell, 1980) (Figure 2).  
