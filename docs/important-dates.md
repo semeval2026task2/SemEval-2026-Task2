@@ -1,10 +1,9 @@
 # Important Dates
 ---
-- ~~Sample data: 15 July 2025~~
-- Training data: 1 September 2025
-- Evaluation data: 1 December 2025 *(internal milestone; not for public release)*
-- Evaluation **start**: 10 January 2026
-- Evaluation **end**: by **31 January 2026** *(latest; organizers may close earlier)*
+- ~~Sample data: August 8 2025~~
+- Training data: September 1 2025
+- Evaluation **start**: January 10 2026
+- Evaluation **end**: by **January 31 2026**
 - Paper submission **due**: February 2026
 - Notification to authors: March 2026
 - Camera‑ready **due**: April 2026
