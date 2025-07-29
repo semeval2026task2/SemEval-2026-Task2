@@ -1,5 +1,6 @@
 # Overview
 ---
+![](https://i.imgur.com/iz6bZbE.png)
 Emotions are a fundamental aspect of human expression.  
 The widely used *affective circumplex model* proposes that all emotions can be described as points in a two‑dimensional space defined by **valence** (pleasantness) and **arousal** (activation) (Russell, 1980) (Figure 2).  
 Affect assessment benefits many applications, such as assessing customer satisfaction (Homburg et al., 2006), well‑being (Andrews and McKennell, 1980), and mental health (Headey et al., 1993).
