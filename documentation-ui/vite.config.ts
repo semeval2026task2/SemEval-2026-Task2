@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/SemEval-2026/',
+  base: '/SemEval-2026-Task2/',
   publicDir: 'public',
   // ---------- server settings ----------
   server: {
