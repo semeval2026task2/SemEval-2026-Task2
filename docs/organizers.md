@@ -2,7 +2,7 @@
 ---
 * Nikita Soni — Stony Brook University  
 * H. Andrew Schwartz — Stony Brook University  
-* Ryan L. Boyd — University of Texas at Dallas  
+* Ryan L. Boyd — University of Texas at Dallas  
 * Tony Bui — Stony Brook University  
 * Syeda Mahwish — Stony Brook University  
 * August Nilsson — Oslo Metropolitan University  
