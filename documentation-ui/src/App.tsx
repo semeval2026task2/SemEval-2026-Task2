@@ -20,7 +20,7 @@ const App = () => (
       }}
       >
         <Routes>
-          <Route path="/SemEval-2026/" element={<Index />} />
+          <Route path="/SemEval-2026-Task2/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
