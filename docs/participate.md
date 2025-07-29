@@ -2,7 +2,7 @@
 ---
 * Tentative schedule, actual dates to be updated soon
 1. **Register**  
-   To participate, please register using this  **[Registration Form](#)**. 
+   To participate, please register using this  Registration Form (TBA). 
    Teams may tackle one or both prediction subtasks.
 
 2. **Sample & Training Data Released (Aug 8 2025 – Sep 1 2025)**  
