@@ -1,6 +1,6 @@
 # Tasks
 ---
-#### **1. Longitudinal Affect Assessment**
+#### **Subtask 1: Longitudinal Affect Assessment**
 
 Given a sequence of *m* essays,  
 $e_{1},\,\ldots,\,e_{m}$ in chronological order, produce **V & A** scores  
@@ -19,7 +19,7 @@ For this subtask the test split contains two marked groups
 
 ---
 
-#### **2. Forecasting (future) Variation in Affect**
+#### **Subtask 2: Forecasting (future) Variation in Affect**
 
 Given a sequence of the first *t* essays together with their **V & A** scores, this subtask asks systems to forecast two changes in **V & A** (refer **Figure 1**):
 
