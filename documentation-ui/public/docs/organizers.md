@@ -62,7 +62,7 @@
   grid-template-columns: repeat(4, 200px);
   gap: 3rem 4rem;
   justify-content:center;
-  overflow-x:auto;
+  overflow:hidden;
   padding-bottom:1rem;
 }
 .organizer-grid figure{
