@@ -1,5 +1,7 @@
 # Task Organizers
+If you have any questions, please contact us at: [semeval2026task2@googlegroups.com](semeval2026task2@googlegroups.com)
 ---
+
 
 <div class="organizer-grid">
 
@@ -57,6 +59,7 @@
 
 <style>
 /* ▸ Grid layout — unchanged */
+
 .organizer-grid{
   display:grid;
   grid-template-columns:repeat(4,200px);   /* fixed 4-col grid */
@@ -111,6 +114,18 @@
 .organizer-grid figure:hover strong,
 .organizer-grid figure:focus-within strong{
   text-decoration:underline;
+}
+@media (max-width:600px){
+  .organizer-grid{
+    grid-template-columns:1fr;             /* single column */
+    gap:2rem;
+  }
+  .organizer-grid figure{
+    width:100%; height:auto;               /* card adapts to content */
+  }
+  .organizer-grid img{
+    width:160px; height:160px;             /* slightly smaller photo */
+  }
 }
 </style>
 
