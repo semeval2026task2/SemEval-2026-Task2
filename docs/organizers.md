@@ -5,52 +5,52 @@
 
 <figure>
   <img src="images/nikita_soni.jpeg"  alt="Nikita Soni">
-  <figcaption><strong>Nikita Soni</strong><br>Stony Brook University, USA</figcaption>
+  <figcaption><strong>Nikita Soni</strong>Stony Brook University, USA</figcaption>
 </figure>
 
 <figure>
   <img src="images/andrew_schwartz.jpg"  alt="H Andrew Schwartz">
-  <figcaption><strong>H Andrew Schwartz</strong><br>Stony Brook University, USA</figcaption>
+  <figcaption><strong>H Andrew Schwartz</strong>Stony Brook University, USA</figcaption>
 </figure>
 
 <figure>
   <img src="images/ryan_boyd.jpg"  alt="Ryan L. Boyd">
-  <figcaption><strong>Ryan L. Boyd</strong><br>University of Texas at Dallas, USA</figcaption>
+  <figcaption><strong>Ryan L. Boyd</strong>University of Texas at Dallas, USA</figcaption>
 </figure>
 
 <figure>
   <img src="images/tony-bui.jpg"  alt="Tony Bui">
-  <figcaption><strong>Tony Bui</strong><br>Stony Brook University, USA</figcaption>
+  <figcaption><strong>Tony Bui</strong>Stony Brook University, USA</figcaption>
 </figure>
 
 <figure>
   <img src="images/syeda_mahwish.jpeg"  alt="Syeda Mahwish">
-  <figcaption><strong>Syeda Mahwish</strong><br>Stony Brook University, USA</figcaption>
+  <figcaption><strong>Syeda Mahwish</strong>Stony Brook University, USA</figcaption>
 </figure>
 
 <figure>
   <img src="images/august_nilsson.jpeg"  alt="August Nilsson">
-  <figcaption><strong>August Nilsson</strong><br>Oslo Metropolitan University, Norway</figcaption>
+  <figcaption><strong>August Nilsson</strong>Oslo Metropolitan University, Norway</figcaption>
 </figure>
 
 <figure>
   <img src="images/adithya_ganesan.jpeg"  alt="Adithya V. Ganesan">
-  <figcaption><strong>Adithya V. Ganesan</strong><br>Stony Brook University, USA</figcaption>
+  <figcaption><strong>Adithya V. Ganesan</strong>Stony Brook University, USA</figcaption>
 </figure>
 
 <figure>
   <img src="images/lyle_ungar.jpg"  alt="Lyle Ungar">
-  <figcaption><strong>Lyle Ungar</strong><br>University of Pennsylvania, USA</figcaption>
+  <figcaption><strong>Lyle Ungar</strong>University of Pennsylvania, USA</figcaption>
 </figure>
 
 <figure>
   <img src="images/niranjan_balasubramanian.jpg"  alt="Niranjan Balasubramanian">
-  <figcaption><strong>Niranjan Balasubramanian</strong><br>Stony Brook University, USA</figcaption>
+  <figcaption><strong>Niranjan Balasubramanian</strong>Stony Brook University, USA</figcaption>
 </figure>
 
 <figure>
   <img src="images/saif_mohammad.jpeg"  alt="Saif M. Mohammad">
-  <figcaption><strong>Saif M. Mohammad</strong><br>NRC Canada</figcaption>
+  <figcaption><strong>Saif M. Mohammad</strong>NRC Canada</figcaption>
 </figure>
 
 </div>
