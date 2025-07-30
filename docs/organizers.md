@@ -4,7 +4,7 @@
 <div class="organizer-grid">
 
 <figure>
-  <img src="images/nikita_soni.jpeg"  alt="Nikita Soni">
+  <img src="images/nikita-soni.jpeg"  alt="Nikita Soni">
   <figcaption><strong>Nikita Soni</strong>Stony Brook University, USA</figcaption>
 </figure>
 
@@ -14,7 +14,7 @@
 </figure>
 
 <figure>
-  <img src="images/ryan_boyd.jpg"  alt="Ryan L. Boyd">
+  <img src="images/ryan-boyd.jpg"  alt="Ryan L. Boyd">
   <figcaption><strong>Ryan L. Boyd</strong>University of Texas at Dallas, USA</figcaption>
 </figure>
 
