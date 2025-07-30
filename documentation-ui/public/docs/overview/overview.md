@@ -10,8 +10,5 @@ The data in this task consist of chronological essays written by various people.
 | ![](https://i.imgur.com/L1hODvI.png) | ![](https://i.imgur.com/jk1LH7C.png) |
 |-------------------------------------|-------------------------------------|
 
-Figure 2: Left: Affective circumplex model reflecting
-the two-dimensional space of valence (pleasantness) and
-arousal (activation) used to describe emotions. Right:
-The affective circumplex grid used to self-report affect
+Figure 2: Left: Affective circumplex model reflecting the two-dimensional space of valence (pleasantness) and arousal (activation) used to describe emotions. Right: The affective circumplex grid used to self-report affect
 during the collection of ‘ecological essays’ dataset.
