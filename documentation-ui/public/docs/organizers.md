@@ -56,31 +56,61 @@
 </div>
 
 <style>
+/* ▸ Grid layout — unchanged */
 .organizer-grid{
-  /* 4 columns fixed at 200 px; horizontal scroll on phones */
   display:grid;
-  grid-template-columns: repeat(4, 200px);
-  gap: 3rem 4rem;
+  grid-template-columns:repeat(4,200px);   /* fixed 4-col grid */
+  gap:3rem 4rem;
   justify-content:center;
-  overflow:hidden;
   padding-bottom:1rem;
+  overflow:hidden;                         /* no extra scroll */
 }
+
+/* ▸ Card */
 .organizer-grid figure{
   margin:0;
-  width:200px;               /* card width  */
-  height:260px;              /* card height */
+  width:200px; height:260px;
   text-align:center;
+  transition:transform .25s ease, box-shadow .25s ease;
 }
+
+/* ▸ Photo */
 .organizer-grid img{
-  width:200px; height:200px; /* photo size  */
-  object-fit:cover; border-radius:50%;
+  width:200px; height:200px;
+  object-fit:cover;
+  border-radius:50%;
   box-shadow:0 2px 6px rgba(0,0,0,.15);
+  transition:transform .25s ease, box-shadow .25s ease;
 }
+
+/* ▸ Caption */
 .organizer-grid figcaption{
-  margin-top:0.5rem;
-  height:60px;               /* caption box keeps every card equal height */
+  margin-top:.5rem;
+  height:60px;
   display:flex; flex-direction:column;
   justify-content:flex-start; align-items:center;
 }
-.organizer-grid strong{ color:#1a54c2; }  /* blue name */
+
+.organizer-grid strong{
+  color:#1a54c2;
+  transition:text-decoration .25s;
+}
+
+/* ▸ 🔵 Hover / focus effect */
+.organizer-grid figure:hover,
+.organizer-grid figure:focus-within{
+  transform:translateY(-4px);
+}
+
+.organizer-grid figure:hover img,
+.organizer-grid figure:focus-within img{
+  transform:scale(1.06);
+  box-shadow:0 6px 14px rgba(0,0,0,.25);
+}
+
+.organizer-grid figure:hover strong,
+.organizer-grid figure:focus-within strong{
+  text-decoration:underline;
+}
 </style>
+
