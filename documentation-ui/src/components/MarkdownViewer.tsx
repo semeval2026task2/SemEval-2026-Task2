@@ -5,6 +5,7 @@ import remarkFootnotes from 'remark-footnotes';
 import remarkMath from 'remark-math';
 import rehypeRaw from 'rehype-raw';
 import rehypeKatex from 'rehype-katex';
+import remarkBreaks from 'remark-breaks'
 import 'katex/dist/katex.min.css';
 
 /* ⬇️  only bring in the heavy editor hook in dev builds */
@@ -50,7 +51,7 @@ export default function MarkdownViewer({ file }: { file: string }) {
       )}
 
       <ReactMarkdown
-        remarkPlugins={[remarkGfm, remarkFootnotes, remarkMath]}
+        remarkPlugins={[remarkGfm, remarkBreaks, remarkFootnotes, remarkMath]}
         rehypePlugins={[rehypeRaw, rehypeKatex]}
       >
         {md}
