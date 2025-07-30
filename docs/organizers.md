@@ -1,14 +1,16 @@
-# Task Organizers  
+# Task Organizers
 ---
-* Nikita Soni — Stony Brook University  
-* H. Andrew Schwartz — Stony Brook University  
-* Ryan L. Boyd — University of Texas at Dallas  
-* Tony Bui — Stony Brook University  
-* Syeda Mahwish — Stony Brook University  
-* August Nilsson — Oslo Metropolitan University  
-* Adithya V. Ganesan — Stony Brook University  
-* Lyle Ungar — University of Pennsylvania  
-* Niranjan Balasubramanian — Stony Brook University  
-* Saif M. Mohammad — NRC Canada  
+
+| ![](images/nikita_soni.jpeg){width=140} | ![](images/andrew_schwartz.jpg){width=140} | ![](images/ryan_boyd.jpg){width=140} |
+| **Nikita Soni**  <br>*Stony Brook University* | **H. Andrew Schwartz**  <br>*Stony Brook University* | **Ryan L. Boyd** <br>*UT Dallas* |
+
+| ![](images/tony_bui.jpg){width=140} | ![](images/syeda_mahwish.jpeg){width=140} | ![](images/august_nilsson.jpeg){width=140} |
+| **Tony Bui**  <br>*Stony Brook University* | **Syeda Mahwish**  <br>*Stony Brook University* | **August Nilsson**  <br>*Oslo Met* |
+
+| ![](images/adithya_ganesan.jpeg){width=140} | ![](images/lyle_ungar.jpg){width=140} | ![](images/niranjan_balasubramanian.jpg){width=140} |
+| **Adithya V. Ganesan** <br>*Stony Brook University* | **Lyle Ungar** <br>*U. Pennsylvania* | **Niranjan Balasubramanian** <br>*Stony Brook University* |
+
+| ![](images/saif_mohammad.jpeg){width=140} |
+| **Saif M. Mohammad** <br>*NRC Canada* |
 
 <!-- \* Lead organizer  † Advisory organizer (others are co‑organizers) -->
