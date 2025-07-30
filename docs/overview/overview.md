@@ -1,9 +1,8 @@
 # Overview
 ---
 ![](https://i.imgur.com/iz6bZbE.png)
-Emotions are a fundamental aspect of human expression.  
-The widely used *affective circumplex model* proposes that all emotions can be described as points in a two‑dimensional space defined by **valence** (pleasantness) and **arousal** (activation) (Russell, 1980) (Figure 2).  
-Affect assessment benefits many applications, such as assessing customer satisfaction (Homburg et al., 2006), well‑being (Andrews and McKennell, 1980), and mental health (Headey et al., 1993).
+
+Emotions are a fundamental aspect of human expression. The widely used *affective circumplex model* proposes that all emotions can be described as points in a two‑dimensional space defined by **valence** (pleasantness) and **arousal** (activation) (Russell, 1980) (Figure 2). Affect assessment benefits many applications, such as assessing customer satisfaction (Homburg et al., 2006), well‑being (Andrews and McKennell, 1980), and mental health (Headey et al., 1993).
 Most prior NLP work on affect has focused on social‑media datasets whose momentary affect is judged by annotators (Mohammad et al., 2018; Preoţiuc‑Pietro et al., 2016; Al Zoubi et al., 2022).  
 However, by their very nature, emotions are subjective and change over time; they are best described by the person experiencing them in their natural environment, not by annotators perceiving affect from social‑media posts.  
 To the best of our knowledge, no publicly available datasets account for these characteristics.
