@@ -96,7 +96,7 @@ If you have any questions, please contact us at:
 }
 
 .organizer-grid strong{
-  color:#1a54c2;
+  color:#000;
   transition:text-decoration .25s;
 }
 
