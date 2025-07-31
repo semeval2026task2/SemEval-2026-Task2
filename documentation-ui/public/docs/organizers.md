@@ -1,7 +1,9 @@
 # Task Organizers
 ---
 
-If you have any questions, please contact us at: [semeval2026task2@googlegroups.com](mailto:semeval2026task2@googlegroups.com)
+If you have any questions, please contact us at:
+<a href="mailto:semeval2026task2@googlegroups.com">semeval2026task2@googlegroups.com</a>
+
 <div class="organizer-grid">
 
 <figure>
