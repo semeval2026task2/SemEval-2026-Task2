@@ -93,7 +93,7 @@ const DocumentationSidebar = ({
         <span className="font-extrabold text-xl md:text-2xl leading-tight tracking-tight">
           SemEval 2026
         </span>
-        <span className="text-sm md:text-base font-semibold leading-snug">
+        <span className="text-sm md:text-base font-semibold leading-snug py-8">
           Task 2: Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
         </span>
       </div>
