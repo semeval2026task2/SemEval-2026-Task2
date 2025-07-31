@@ -90,10 +90,10 @@ const DocumentationSidebar = ({
       <div className="px-6 pt-6 pb-4 flex flex-col gap-1 select-none">
         {/* leaf logo — replace with your own SVG or image if you like */}
 
-        <span className="font-extrabold text-2xl leading-tight tracking-tight">
+        <span className="font-extrabold text-xl md:text-2xl leading-tight tracking-tight">
           SemEval 2026
         </span>
-        <span className="text-xs font-bold leading-tight">
+        <span className="text-sm md:text-base font-semibold leading-snug">
           Task 2: Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
         </span>
       </div>
@@ -138,7 +138,9 @@ const DocumentationSidebar = ({
                         `}
                       />
                     )}
-                    <span className="text-sm font-medium">{item.title}</span>
+                    <span className="text-base md:text-lg lg:text-xl font-medium">
+                      {item.title}
+                    </span>
                   </div>
 
                   {/* Children list */}
@@ -154,7 +156,7 @@ const DocumentationSidebar = ({
                           <a
                             href="#"
                             className={`
-                              block pl-10 pr-4 py-2 text-sm transition-colors
+                              block pl-10 pr-4 py-2.5 text-base md:text-lg transition-colors
                               ${
                                 child.file === activeFile
                                   ? 'bg-nav-hover'
