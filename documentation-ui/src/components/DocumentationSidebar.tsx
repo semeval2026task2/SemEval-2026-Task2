@@ -28,14 +28,15 @@ export const navItems: NavItem[] = [
     file: '/docs/data/data-overview.md',
   },
   {
-    title: 'Evaluation',
-    file: '/docs/evaluation/evaluation.md',
-  },
-  {
     title: 'Important Dates',
     file: '/docs/important-dates.md',
   },
-  { title: 'Task Organizers', file: '/docs/organizers.md' },
+  {
+    title: 'Evaluation',
+    file: '/docs/evaluation/evaluation.md',
+  },
+  
+  { title: 'Organizers', file: '/docs/organizers.md' },
 ];
 
 /* -------------- SIDEBAR COMPONENT ---------------- */
