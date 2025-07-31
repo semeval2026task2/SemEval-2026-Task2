@@ -112,7 +112,7 @@ Error generating stack: `+a.message+`
               `;return W.jsxs("li",{children:[W.jsxs("div",{className:f,onClick:()=>o(l,u),children:[c&&W.jsx(Cx,{size:16,className:`
                           mr-2 transition-transform duration-200
                           ${d?"rotate-90 text-primary-foreground":"text-muted-foreground"}
-                        `}),W.jsx("span",{className:"text-sm md:text-sm lg:text-sm font-small",children:u.title})]}),c&&W.jsx("ul",{className:`
+                        `}),W.jsx("span",{className:"text-base md:text-base lg:text-base font-small",children:u.title})]}),c&&W.jsx("ul",{className:`
                         overflow-hidden transition-all duration-300 ease-in-out
                         ${d?"max-h-96 opacity-100":"max-h-0 opacity-0"}
                       `,children:u.children.map((b,v)=>W.jsx("li",{children:W.jsx("a",{href:"#",className:`
