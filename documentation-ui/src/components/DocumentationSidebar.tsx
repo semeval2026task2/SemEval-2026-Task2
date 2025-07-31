@@ -139,7 +139,7 @@ const DocumentationSidebar = ({
                         `}
                       />
                     )}
-                    <span className="text-sm md:text-sm lg:text-sm font-small">
+                    <span className="text-base md:text-base lg:text-base font-small">
                       {item.title}
                     </span>
                   </div>
