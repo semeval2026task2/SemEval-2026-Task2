@@ -14,8 +14,8 @@ The training set includes sequences of essays and their associated **V & A**
 
 For this subtask the test split contains two marked groups  
 
-1. **unseen users** – users for whom no data was observed during training  
-2. **seen users** – users that also appear in the training set (but at future timesteps)  
+1. **Unseen users** – users for whom no data was observed during training  
+2. **Seen users** – users that also appear in the training set (but at future timesteps)  
 
 ---
 
@@ -23,13 +23,13 @@ For this subtask the test split contains two marked groups
 
 Given a sequence of the first *t* essays together with their **V & A** scores, this subtask asks systems to forecast two changes in **V & A** (refer **Figure 1**):
 
-2A. **State change** – change from the last observed timestep to the next  
+**Subtask 2A**. **State change** – change from the last observed timestep to the next  
 
    $$
    \Delta_{1}=v_{t+1}-v_{t}
    $$
 
-2B. **Dispositional change** – change from the average of the observed segment  
+**Subtask 2B**. **Dispositional change** – change from the average of the observed segment  
    to the average of an equally‑sized future segment  
 
    $$
