@@ -2,16 +2,15 @@
 ---
 
 If you have any questions, please contact us at:
-<a href="mailto:semeval2026task2@googlegroups.com">semeval2026task2@googlegroups.com</a>
+<a href="mailto:semeval2026task2@googlegroups.com">semeval2026task2[at]googlegroups[dot]com</a>
 
 <div class="organizer-grid">
 
 <figure>
   <img src="images/nikita-soni.jpeg"  alt="Nikita Soni">
   <figcaption>
-    <strong>Nikita Soni</strong>
+  <a href="mailto:nikita.soni@stonybrook.edu">Nikita Soni</a>
     Stony Brook University, USA
-    <a href="mailto:nikita.soni@stonybrook.edu">nikita.soni@stonybrook.edu</a>
   </figcaption>
 </figure>
 
@@ -104,6 +103,8 @@ If you have any questions, please contact us at:
   transition:text-decoration .25s;
 }
 
+
+
 /* ▸ 🔵 Hover / focus effect */
 .organizer-grid figure:hover,
 .organizer-grid figure:focus-within{
@@ -116,8 +117,8 @@ If you have any questions, please contact us at:
   box-shadow:0 6px 14px rgba(0,0,0,.25);
 }
 
-.organizer-grid figure:hover strong,
-.organizer-grid figure:focus-within strong{
+.organizer-grid figure:hover :is(strong, a),
+.organizer-grid figure:focus-within :is(strong, a){
   text-decoration:underline;
 }
 @media (max-width:600px){
