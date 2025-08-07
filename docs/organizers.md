@@ -8,7 +8,11 @@ If you have any questions, please contact us at:
 
 <figure>
   <img src="images/nikita-soni.jpeg"  alt="Nikita Soni">
-  <figcaption><strong>Nikita Soni</strong>Stony Brook University, USA</figcaption>
+  <figcaption>
+    <strong>Nikita Soni</strong><br>
+    Stony Brook University, USA<br>
+    <a href="mailto:nikita.soni@stonybrook.edu">nikita.soni@stonybrook.edu</a>
+  </figcaption>
 </figure>
 
 <figure>
