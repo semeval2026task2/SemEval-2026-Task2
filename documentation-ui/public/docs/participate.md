@@ -1,5 +1,9 @@
 # Getting Started
 ---
+
+Please refer to the **Terms and Conditions** to participate in this shared task.
+Teams are encouraged to participate in both subtask 1 and subtask 2, and are allowed single task submissions as well.
+
 * Tentative schedule, actual dates to be updated soon
 1. **Register**  
    To participate, please register through  [CodaBench](https://www.codabench.org/competitions/9963/#/participate-tab). 
