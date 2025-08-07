@@ -35,7 +35,8 @@ export const navItems: NavItem[] = [
     title: 'Evaluation',
     file: '/docs/evaluation/evaluation.md',
   },
-  
+  { title: 'Resources', file: '/docs/resources.md' },
+  { title: 'Terms and Conditions', file: '/docs/terms-and-conditions.md' },
   { title: 'Organizers', file: '/docs/organizers.md' },
 ];
 
