@@ -92,7 +92,7 @@ const DocumentationSidebar = ({
         {/* leaf logo — replace with your own SVG or image if you like */}
 
         <span className="font-extrabold text-xl md:text-2xl leading-tight tracking-tight">
-          SemEval 2026 Task 2:
+          SemEval 2026 Task 2
         </span>
         <span className="text-sm md:text-base font-semibold leading-snug py-8">
           Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
