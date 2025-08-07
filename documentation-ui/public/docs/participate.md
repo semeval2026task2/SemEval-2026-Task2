@@ -2,11 +2,11 @@
 ---
 * Tentative schedule, actual dates to be updated soon
 1. **Register**  
-   To participate, please register using this  [Registration Form](https://www.codabench.org/competitions/9963/#/participate-tab). 
+   To participate, please register through  [CodaBench](https://www.codabench.org/competitions/9963/#/participate-tab). 
    Teams may tackle one or both prediction subtasks.
 
 2. **Sample & Training Data Released (Aug 8 2025 – Sep 1 2025)**  
-   * **Jul 15 2025 – Sample set** released so teams can verify pipelines.  
+   * **Aug 8 2025 – Sample set** released so teams can verify pipelines.  
    * **Sep 1 2025 – Full training set** (essays + gold valence/arousal labels) published.  
      External resources are welcomed.
 

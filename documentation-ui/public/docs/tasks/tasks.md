@@ -23,13 +23,13 @@ For this subtask the test split contains two marked groups
 
 Given a sequence of the first *t* essays together with their **V & A** scores, this subtask asks systems to forecast two changes in **V & A** (refer **Figure 1**):
 
-1. **State change** – change from the last observed timestep to the next  
+2A. **State change** – change from the last observed timestep to the next  
 
    $$
    \Delta_{1}=v_{t+1}-v_{t}
    $$
 
-2. **Dispositional change** – change from the average of the observed segment  
+2B. **Dispositional change** – change from the average of the observed segment  
    to the average of an equally‑sized future segment  
 
    $$
