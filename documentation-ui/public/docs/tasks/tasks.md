@@ -1,5 +1,13 @@
 # Tasks
 ---
+
+<div style="text-align:center;margin:16px 0;">
+  <img src="https://i.imgur.com/KXHgQ9t.png"
+       alt="Figure 1"
+       style="max-width:100%;height:auto;">
+  <div style="font-size:14px;margin-top:6px;">Figure&nbsp;1</div>
+</div>
+
 #### **Subtask 1: Longitudinal Affect Assessment**
 
 Given a sequence of *m* essays,  
@@ -36,15 +44,6 @@ Given a sequence of the first *t* essays together with their **V & A** score
    \Delta_{\text{avg}} = \operatorname{avg}\bigl(v_{t+1:n}\bigr)\;
                         -\; \operatorname{avg}\bigl(v_{1:t}\bigr)
    $$
-
----
-
-<div style="text-align:center;margin:16px 0;">
-  <img src="https://i.imgur.com/KXHgQ9t.png"
-       alt="Figure 1"
-       style="max-width:100%;height:auto;">
-  <div style="font-size:14px;margin-top:6px;">Figure&nbsp;1</div>
-</div>
 
 ---
 | **User‑ID**      | **Text‑ID**      | **Text**        | **Timestamp**       | **Wave**        | **Valence**     | **Arousal** |
