@@ -2,7 +2,7 @@
 ---
 
 Please refer to the **Terms and Conditions** to participate in this shared task.
-Teams are encouraged to participate in both subtask 1 and subtask 2, and are allowed single task submissions as well.
+Teams are encouraged to participate in both Subtask 1 and Subtask 2, and are allowed single subtask participations as well.
 
 * Tentative schedule, actual dates to be updated soon
 1. **Register**  

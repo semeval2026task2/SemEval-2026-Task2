@@ -38,6 +38,15 @@ Given a sequence of the first *t* essays together with their **V & A** score
    $$
 
 ---
+
+<div style="text-align:center;margin:16px 0;">
+  <img src="https://i.imgur.com/KXHgQ9t.png"
+       alt="Figure 1"
+       style="max-width:100%;height:auto;">
+  <div style="font-size:14px;margin-top:6px;">Figure&nbsp;1</div>
+</div>
+
+---
 | **User‑ID**      | **Text‑ID**      | **Text**        | **Timestamp**       | **Wave**        | **Valence**     | **Arousal** |
 |------------------|------------------|-----------------|---------------------|-----------------|-----------------|-------------|
 | *Example user‑id* | *Example text‑id* | Example text | Example timestamp | `[1,2,3,4,5,6]` | `[0,1,2,3,4]` | `[0,1,2]` |
