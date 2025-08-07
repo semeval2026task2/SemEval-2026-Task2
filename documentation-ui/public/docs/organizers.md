@@ -9,8 +9,8 @@ If you have any questions, please contact us at:
 <figure>
   <img src="images/nikita-soni.jpeg"  alt="Nikita Soni">
   <figcaption>
-    <strong>Nikita Soni</strong><br>
-    Stony Brook University, USA<br>
+    <strong>Nikita Soni</strong>
+    Stony Brook University, USA
     <a href="mailto:nikita.soni@stonybrook.edu">nikita.soni@stonybrook.edu</a>
   </figcaption>
 </figure>
@@ -77,7 +77,7 @@ If you have any questions, please contact us at:
 /* ▸ Card */
 .organizer-grid figure{
   margin:0;
-  width:200px; height:260px;
+  width:200px; height:auto;;
   text-align:center;
   transition:transform .25s ease, box-shadow .25s ease;
 }
@@ -94,7 +94,7 @@ If you have any questions, please contact us at:
 /* ▸ Caption */
 .organizer-grid figcaption{
   margin-top:.5rem;
-  height:60px;
+  height:auto;
   display:flex; flex-direction:column;
   justify-content:flex-start; align-items:center;
 }
