@@ -106,7 +106,7 @@ Error generating stack: `+a.message+`
           transform transition-transform duration-300 ease-in-out
           ${e?"translate-x-0":"-translate-x-full md:translate-x-0"}
           flex flex-col
-        `,children:[W.jsxs("div",{className:"px-6 pt-6 pb-4 flex flex-col gap-1 select-none",children:[W.jsx("span",{className:"font-extrabold text-xl md:text-2xl leading-tight tracking-tight",children:"SemEval 2026"}),W.jsx("span",{className:"text-sm md:text-base font-semibold leading-snug py-8",children:"Task 2: Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays"})]}),W.jsx("nav",{className:"flex-1 overflow-y-auto",children:W.jsx("ul",{className:"py-0",children:r.map((u,l)=>{const c=u.children&&u.children.length>0,d=a===l,m=!c&&u.file===i,f=`
+        `,children:[W.jsxs("div",{className:"px-6 pt-6 pb-4 flex flex-col gap-1 select-none",children:[W.jsx("span",{className:"font-extrabold text-xl md:text-2xl leading-tight tracking-tight",children:"SemEval 2026 Task 2:"}),W.jsx("span",{className:"text-sm md:text-base font-semibold leading-snug py-8",children:"Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays"})]}),W.jsx("nav",{className:"flex-1 overflow-y-auto",children:W.jsx("ul",{className:"py-0",children:r.map((u,l)=>{const c=u.children&&u.children.length>0,d=a===l,m=!c&&u.file===i,f=`
                 flex items-center px-4 py-2 cursor-pointer transition-colors
                 ${d||m?"bg-nav-active text-primary-foreground":"hover:bg-nav-hover"}
               `;return W.jsxs("li",{children:[W.jsxs("div",{className:f,onClick:()=>o(l,u),children:[c&&W.jsx(Cx,{size:16,className:`
