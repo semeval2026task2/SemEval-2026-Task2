@@ -14,6 +14,7 @@ Dataset Download can be found in: [https://www.codabench.org/competitions/9963/]
       <th style="padding:6px 8px;border:1px solid #ccc;"><strong>Collection_Phase</strong></th>
       <th style="padding:6px 8px;border:1px solid #ccc;"><strong>Valence</strong></th>
       <th style="padding:6px 8px;border:1px solid #ccc;"><strong>Arousal</strong></th>
+			<th style="padding:6px 8px;border:1px solid #ccc;"><strong>is_words</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -25,6 +26,7 @@ Dataset Download can be found in: [https://www.codabench.org/competitions/9963/]
       <td style="padding:6px 8px;border:1px solid #ccc;">[1, 2, 3, 4, 5, 6]</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">[0, 1, 2, 3, 4]</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">[0, 1, 2]</td>
+			<td style="padding:6px 8px;border:1px solid #ccc;">[0, 1]</td>
     </tr>
   </tbody>
 </table>
@@ -33,10 +35,10 @@ Dataset Download can be found in: [https://www.codabench.org/competitions/9963/]
 
 <p style="font-size: 0.9em; color: #555; margin-top: 0.5em;">
   Note 1: The data was collected in 7 different phases over multiple years (2021–2024).  
-  We provide the collection_phase as additional information in case it is helpful.
+  We provide the <strong>collection_phase</strong> as additional information in case it is helpful.
 </p>
 <p style="font-size: 0.9em; color: #555; margin-top: 0.2em;">
   Note 2: The participants in the dataset collection study could describe "how they are feeling"  
   by writing an essay or writing 1 to 5 feeling words (e.g., happy, calm, sad, etc.).  
-  We provide a boolean column is_words to distinguish the two forms.
+  We provide a boolean column <strong>is_words</strong> to distinguish the two forms.
 </p>
