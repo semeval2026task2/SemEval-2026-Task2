@@ -2,19 +2,19 @@
 ---
 
 Dataset Download can be found in: [https://www.codabench.org/competitions/9963/](https://www.codabench.org/competitions/9963/)
-
+### Data Format
 <!-- Dataset schema used in both Subtask 1 and Subtask 2 -->
 <table style="border-collapse:collapse;width:100%;border:1px solid #ccc;font-size:14px;">
   <thead>
     <tr style="background:#f7f7f7;">
-      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>User&nbsp;ID</strong></th>
-      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>Text&nbsp;ID</strong></th>
-      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>Text</strong></th>
-      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>Timestamp</strong></th>
-      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>Collection_Phase</strong></th>
-      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>Valence</strong></th>
-      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>Arousal</strong></th>
+      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>user_id</strong></th>
+      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>text_id</strong></th>
+      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>text</strong></th>
+      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>timestamp</strong></th>
+      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>collection_phase</strong></th>
 			<th style="padding:6px 8px;border:1px solid #ccc;"><strong>is_words</strong></th>
+      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>valence</strong></th>
+      <th style="padding:6px 8px;border:1px solid #ccc;"><strong>arousal</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -24,9 +24,9 @@ Dataset Download can be found in: [https://www.codabench.org/competitions/9963/]
       <td style="padding:6px 8px;border:1px solid #ccc;">Example text</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">Example timestamp</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">[1, 2, 3, 4, 5, 6]</td>
+			<td style="padding:6px 8px;border:1px solid #ccc;">[0, 1]</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">[0, 1, 2, 3, 4]</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">[0, 1, 2]</td>
-			<td style="padding:6px 8px;border:1px solid #ccc;">[0, 1]</td>
     </tr>
   </tbody>
 </table>
