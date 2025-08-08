@@ -32,6 +32,11 @@ Dataset Download can be found in: [https://www.codabench.org/competitions/9963/]
 <p style="margin-top:6px;"><em>Dataset schema used in both Subtask 1 and Subtask 2.</em></p>
 
 <p style="font-size: 0.9em; color: #555; margin-top: 0.5em;">
-  Note: The data was collected in 7 different phases over multiple years (2021–2024).  
+  Note 1: The data was collected in 7 different phases over multiple years (2021–2024).  
   We provide the <code>collection_phase</code> as additional information in case it is helpful.
+</p>
+<p style="font-size: 0.9em; color: #555; margin-top: 0.2em;">
+  Note 2: The participants in the dataset collection study could describe "how they are feeling"  
+  by writing an essay or writing 1 to 5 feeling words (e.g., happy, calm, sad, etc.).  
+  We provide a boolean column <code>is_words</code> to distinguish the two forms.
 </p>
