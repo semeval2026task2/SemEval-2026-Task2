@@ -1,7 +1,7 @@
 # Data 
 ---
 
-Dataset Download can be found in: [https://www.codabench.org/competitions/9963/](https://www.codabench.org/competitions/9963/)
+Please register for the shared task to access the datasets on our [Codabench competition site](https://www.codabench.org/competitions/9963/) [https://www.codabench.org/competitions/9963/](https://www.codabench.org/competitions/9963/).
 ### Data Format
 <!-- Dataset schema used in both Subtask 1 and Subtask 2 -->
 <table style="border-collapse:collapse;width:100%;border:1px solid #ccc;font-size:14px;">
