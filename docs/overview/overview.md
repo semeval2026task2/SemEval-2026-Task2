@@ -1,5 +1,9 @@
 # Overview
 ---
+[<img src=https://img.shields.io/badge/SemEval2026%20Task%202%20Website-blue>](https://semeval2026task2.github.io/SemEval-2026-Task2/)
+[<img src=https://img.shields.io/badge/Codabench%20Competition%20Page-purple>](https://www.codabench.org/competitions/9963/)
+[<img src=https://img.shields.io/badge/GitHub%20Repository%20-yellow>](https://github.com/semeval2026task2/EmotionValArouTimeVariation2026)
+
 ![](https://i.imgur.com/okG0fuV.png)
 
 <p style="font-size: 0.9em; color: #555; margin-top: 0.2em;">
