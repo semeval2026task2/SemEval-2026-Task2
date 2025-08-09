@@ -10,15 +10,14 @@
 
 #### **Subtask 1: Longitudinal Affect Assessment**
 
-Given a sequence of *m* essays,  
-$e_{1},\,\ldots,\,e_{m}$ in chronological order, produce **V & A** scores  
+Given a sequence of *m* texts (essays or feeling words), $e_{1},\,\ldots,\,e_{m}$ in chronological order, produce Valence & Arousal **(V & A)** scores  
 
 $$
 (v_{1},a_{1}),\; \ldots ,\; (v_{m},a_{m})
 $$
 
-one pair for each essay (refer **Figure 1**).  
-The training set includes sequences of essays and their associated **V & A** scores from multiple people.  
+one pair for each text (refer **Figure 1**).  
+The training set includes sequences of texts and their associated **V & A** scores from multiple people.  
 
 For this subtask the test split contains two marked groups  
 
@@ -29,7 +28,7 @@ For this subtask the test split contains two marked groups
 
 #### **Subtask 2: Forecasting (future) Variation in Affect**
 
-Given a sequence of the first *t* essays together with their **V & A** scores, this subtask asks systems to forecast two changes in **V & A** (refer **Figure 1**):
+Given a sequence of the first *t* texts (essays or feeling words) together with their Valence & Arousal **(V & A)** scores, this subtask asks systems to forecast two changes in **V & A** (refer **Figure 1**):
 
 **Subtask 2A**. **State change** – change from the last observed timestep to the next  
 
