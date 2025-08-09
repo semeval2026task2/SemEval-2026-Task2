@@ -2,8 +2,6 @@
 ---
 
 These terms and conditions are adapted from [SemEval-2025 Task 11: Bridging the Gap in Text-Based Emotion Detection](https://www.codabench.org/competitions/3863/).
-<br/>
-<br/>
 
 <details>
 <summary><strong>1. Consent to Public Release of Scores</strong></summary>
