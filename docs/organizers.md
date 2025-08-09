@@ -2,7 +2,7 @@
 ---
 
 If you have any questions, please contact us at:
-<a href="mailto:semeval2026task2@googlegroups.com">semeval2026task2[at]googlegroups[dot]com</a>
+<a href="mailto:semeval2026task2@googlegroups.com">semeval2026task2[at]googlegroups[dot]com</a> or <a href="mailto:nisoni@cs.stonybrook.edu">nisoni[at]cs[dot]stonybrook[dot]edu</a>.
 
 <div class="organizer-grid">
 
@@ -15,7 +15,7 @@ If you have any questions, please contact us at:
 </figure>
 
 <figure>
-  <img src="images/andrew_schwartz.jpg"  alt="H Andrew Schwartz">
+  <img src="images/andrew_schwartz.jpg"  alt="H. Andrew Schwartz">
   <figcaption><strong>H Andrew Schwartz</strong>Stony Brook University, USA</figcaption>
 </figure>
 
