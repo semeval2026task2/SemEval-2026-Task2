@@ -23,9 +23,9 @@ Please register for the shared task to access the datasets on our [Codabench com
       <td style="padding:6px 8px;border:1px solid #ccc;"><em>example_text_id</em></td>
       <td style="padding:6px 8px;border:1px solid #ccc;">Example text</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">Example timestamp</td>
-      <td style="padding:6px 8px;border:1px solid #ccc;">[1, 2, 3, 4, 5, 6]</td>
-			<td style="padding:6px 8px;border:1px solid #ccc;">[0, 1]</td>
-      <td style="padding:6px 8px;border:1px solid #ccc;">[0, 1, 2, 3, 4]</td>
+      <td style="padding:6px 8px;border:1px solid #ccc;">[1, 2, 3, 4, 5, 6, 7]</td>
+			<td style="padding:6px 8px;border:1px solid #ccc;">[True, False]</td>
+      <td style="padding:6px 8px;border:1px solid #ccc;">[-2, -1, 0, 1, 2]</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">[0, 1, 2]</td>
     </tr>
   </tbody>
