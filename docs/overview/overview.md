@@ -3,8 +3,6 @@
 <!-- Tighten the rule and badge spacing -->
 <style>
   /* shrink the hr spacing under the H1 */
-  h1 + hr { margin: 10px 0 14px !important; }
-
   /* badge row */
   .badges { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin: 0; }
 
