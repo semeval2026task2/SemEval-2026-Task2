@@ -55,7 +55,11 @@
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/#important-dates">
     Important Dates
   </a>
-  for the estimated timeline.
+  for the estimated timeline and 
+  <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/#participate">
+    Getting Started
+  </a> 
+ for instructions
 </div>
 
 
