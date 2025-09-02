@@ -1,7 +1,7 @@
 # Important Dates
 ---
-- Sample data: August 8 2025
-- Training data: September 1 2025
+~~Sample data: August 8 2025~~
+- Training data: September 2 2025
 - Evaluation **start**: January 10 2026
 - Evaluation **end**: by **January 31 2026**
 - Paper submission **due**: February 2026
