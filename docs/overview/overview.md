@@ -12,6 +12,32 @@
   </a>
 </div>
 
+---
+<style>
+  .announcement {
+    background: #eef7fb;         
+    border: 1px solid #d9ecf7;
+    padding: 18px 22px;
+    border-radius: 12px;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin: 16px 0;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
+  }
+  .announcement a { font-weight: 600; text-decoration: none; }
+  .announcement a:hover { text-decoration: underline; }
+</style>
+
+<div class="announcement" role="status" aria-live="polite">
+  <strong>The competition is now open</strong> and participation sign-up ends
+  <strong>January 9, 2026</strong>. Please see the
+  <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/#important-dates">
+    Important Dates
+  </a>
+  for the estimated timeline.
+</div>
+
+
 ![](https://i.imgur.com/okG0fuV.png)
 
 <p style="font-size: 0.9em; color: #555; margin-top: 0.2em;">
