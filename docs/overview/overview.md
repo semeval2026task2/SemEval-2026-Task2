@@ -32,7 +32,7 @@
   </a>
 </div>
 
----
+<hr style="margin:10px 0 14px">
 
 <style>
   .announcement {
