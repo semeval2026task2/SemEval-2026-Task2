@@ -1,5 +1,4 @@
 # Overview
----
 
 <!-- Tighten the rule and badge spacing -->
 <style>
