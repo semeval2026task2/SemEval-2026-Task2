@@ -16,7 +16,7 @@ If you have any questions, please contact us at:
 
 <figure>
   <img src="images/andrew_schwartz.jpg"  alt="H. Andrew Schwartz">
-  <figcaption><strong>H Andrew Schwartz</strong>Stony Brook University, USA</figcaption>
+  <figcaption><strong>H Andrew Schwartz</strong>Vanderbilt University, USA</figcaption>
 </figure>
 
 <figure>
@@ -26,7 +26,7 @@ If you have any questions, please contact us at:
 
 <figure>
   <img src="images/tony-bui.jpg"  alt="Tony Bui">
-  <figcaption><strong>Tony Bui</strong>Stony Brook University, USA</figcaption>
+  <figcaption><strong>Tony Bui</strong>Vanderbilt University, USA</figcaption>
 </figure>
 
 <figure>
