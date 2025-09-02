@@ -13,6 +13,7 @@
 </div>
 
 ---
+
 <style>
   .announcement {
     background: #eef7fb;         
