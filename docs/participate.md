@@ -5,7 +5,7 @@ Please refer to the **Terms and Conditions** to participate in this shared task.
 Teams are encouraged to participate in both Subtask 1 and Subtask 2, and are allowed single subtask participations as well.
 
 * Tentative schedule, actual dates to be updated soon
-1. **Register**  
+1. **Register**  (Participation Sign Up Deadline: January 9 2026)
    To participate, please register through  [CodaBench](https://www.codabench.org/competitions/9963/#/participate-tab). 
    Teams may tackle one or both prediction subtasks.
 
