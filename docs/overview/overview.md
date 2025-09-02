@@ -1,14 +1,35 @@
 # Overview
 ---
-<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+
+<!-- Tighten the rule and badge spacing -->
+<style>
+  /* shrink the hr spacing under the H1 */
+  h1 + hr { margin: 10px 0 14px !important; }
+
+  /* badge row */
+  .badges { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin: 0; }
+
+  /* kill the theme's top/bottom image margins just for these badges */
+  .badges img {
+    display:inline-block !important;
+    margin: 0 !important;
+    vertical-align: middle;
+    height: 28px;            /* tweak size here (e.g., 24–36px) */
+  }
+</style>
+
+<!-- Use an explicit <hr> with small margin (instead of markdown ---) -->
+<hr style="margin:10px 0 14px">
+
+<div class="badges">
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/">
-    <img src="https://img.shields.io/badge/SemEval2026%20Task%202%20Website-blue" alt="SemEval2026 Task 2 Website" />
+    <img src="https://img.shields.io/badge/SemEval2026%20Task%202%20Website-blue" alt="SemEval2026 Task 2 Website">
   </a>
   <a href="https://www.codabench.org/competitions/9963/">
-    <img src="https://img.shields.io/badge/Codabench%20Competition%20Page-purple" alt="Codabench Competition Page" />
+    <img src="https://img.shields.io/badge/Codabench%20Competition%20Page-purple" alt="Codabench Competition Page">
   </a>
   <a href="https://github.com/semeval2026task2/EmotionValArouTimeVariation2026">
-    <img src="https://img.shields.io/badge/GitHub%20Repository%20-yellow" alt="GitHub Repository" />
+    <img src="https://img.shields.io/badge/GitHub%20Repository%20-yellow" alt="GitHub Repository">
   </a>
 </div>
 
