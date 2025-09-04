@@ -1,4 +1,10 @@
 ## Data Statistics
+### Total Dataset Size
+- Observations: **5,285** (language, EMA emotion pairs)
+- Users: **182** (mean observations per user: **72.8**
+
+- Essays: median number of tokens: **53.9**
+- Words: median number of tokens: **48.28**
 ### Full Data Statistics
 
 <table style="border-collapse:collapse;width:100%;border:1px solid #ccc;font-size:14px;">
