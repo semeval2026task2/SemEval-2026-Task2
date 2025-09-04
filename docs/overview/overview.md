@@ -50,11 +50,11 @@
 <div class="announcement" role="status" aria-live="polite">
   <strong>The competition is now open</strong> and participation sign-up ends
   <strong>January 9, 2026</strong>. Please see the
-  <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/#important-dates">
+  <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/important-dates">
     Important Dates
   </a>
   for the estimated timeline and 
-  <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/#participate">
+  <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/getting-started">
     Getting Started
   </a> 
  for instructions
