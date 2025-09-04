@@ -1,10 +1,10 @@
-<!doctype html>
-<html><head><meta charset="utf-8"><title>Redirecting…</title>
+<!doctype html><html><head><meta charset="utf-8"><title>Redirecting…</title>
 <script>
-  // Keep the repo segment ("/SemEval-2026-Task2")
-  var pathSegmentsToKeep = 1;
-  var l = window.location;
-  var repo = l.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/');
-  l.replace(repo + '/?/' + l.pathname.slice(repo.length + 1) + l.search + l.hash);
+var pathSegmentsToKeep = 1; // keep "/SemEval-2026-Task2"
+var l = window.location;
+var repo = l.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/');
+var rest = l.pathname.slice(repo.length + 1);
+var search = l.search ? '&' + l.search.slice(1).replace(/&/g,'~and~') : '';
+l.replace(repo + '/?/' + rest.replace(/&/g,'~and~') + search + l.hash);
 </script>
 </head><body></body></html>
