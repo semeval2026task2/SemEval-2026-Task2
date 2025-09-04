@@ -100,15 +100,4 @@
 
 <p>Upload <code>submission.zip</code> on the Codabench task page.</p>
 
-<!-- ===== Leaderboard Behaviour ===== -->
-<h3>Leaderboard Behaviour</h3>
-<ol>
-  <li><strong>New submissions overwrite all previous scores.</strong><br>
-      If a CSV is missing in a newer ZIP, its leaderboard entry becomes “n/a”.</li>
-  <li><strong>Partial submissions are allowed.</strong><br>
-      You may submit results for any subset of subtasks.</li>
-  <li><strong>Column integrity is strict.</strong><br>
-      Wrong headers, order, or counts will cause a submission error.</li>
-</ol>
-
 <p>If you encounter any problems, contact the task organizers.</p>
