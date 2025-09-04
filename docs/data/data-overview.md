@@ -168,5 +168,7 @@ We included the “feeling words” data as well in order to provide more exampl
 </p>
 
 <div style="margin:16px 0;padding:12px 14px;border:1px solid #d4b106;background:#fffbe6;border-radius:8px;">
-  Please go through the <strong>Submission Instructions</strong> for additional details.
+  Please go through the <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/submission-instructions">
+    Submission Instructions
+  </a>  for additional details.
 </div>
