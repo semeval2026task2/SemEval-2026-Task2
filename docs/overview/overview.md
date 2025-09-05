@@ -48,6 +48,10 @@
 </style>
 
 <div class="announcement" role="status" aria-live="polite">
+  <strong>Training data released!!!</strong> Have fun participating in the shared task competition!!
+</div>
+
+<div class="announcement" role="status" aria-live="polite">
   <strong>The competition is now open</strong> and participation sign-up ends
   <strong>January 9, 2026</strong>. Please see the
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/important-dates">
