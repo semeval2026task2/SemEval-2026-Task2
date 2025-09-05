@@ -6,10 +6,12 @@ Please register for the shared task to access the datasets on our [Codabench com
 ### Data Format
 
 <p>
-The training and evaluation data consist of longitudinal texts (“ecological essays and feeling words”) collected over multiple years (2021–2024), consisting of real-time essays and feeling words (e.g., happy, calm, sad, etc.) written by U.S. service-industry workers about “how they are feeling.” The essays and feeling words represent ecologically embedded affect—allowing the study of emotions in their natural environment—and are associated with self-reported affect over the circumplex.
+The training and evaluation data consist of 5,285 longitudinal texts (“ecological essays and feeling words”) written by 182 authors collected over multiple years (2021 – 2024), consisting of real‑time essays and feeling words (e.g., happy, calm, sad, etc.) written by U.S. service‑industry workers about “how they are feeling”. More statistics on the data can be found in the <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/data-statistics">
+    Data Statistics
+  </a> tab.
 </p>
 <p>
-We included the “feeling words” data as well in order to provide more examples and suggest participants consider modeling those separately or jointly with the essays.
+The way we describe and assign emotion words/labels to our feelings is a rich psychological process that is diagnostic of how our past experiences influence our current perception of how we relate to the world. Therefore, we include the "feeling words" data as well in our training and evaluation sets. Additionally, this increases the number of examples. <i>We suggest participants to consider modeling feeling-words separately or jointly with the essays.</i>
 </p>
 
 #### <u>Subtask 1 — Longitudinal Affect Assessment:</u>
@@ -41,6 +43,16 @@ We included the “feeling words” data as well in order to provide more exampl
     </tr>
   </tbody>
 </table>
+
+<details style="margin-top:8px;">
+  <summary><strong>CSV example <code>train_subtask1.csv</code></strong></summary>
+  <pre><code>user_id,text_id,text,timestamp,collection_phase,is_words,valence,arousal
+137,684,"I felt calm after the shift.",2023-08-16 09:32:00,1,True,0.20,0.30
+242,219,"Another example text here.",2023-08-20 18:05:12,2,False,-0.10,0.15
+905,507,"More text for the demo.",2023-09-01 07:01:45,3,True,0.00,0.80
+</code></pre>
+</details>
+
 </br>
 <p>where,</p>
 <ul>
@@ -105,6 +117,16 @@ We included the “feeling words” data as well in order to provide more exampl
     </tr>
   </tbody>
 </table>
+
+<details style="margin-top:8px;">
+  <summary><strong>CSV example <code>train_subtask2a.csv</code> </strong></summary>
+  <pre><code>user_id,state_change_valence,state_change_arousal
+137,0.42,-0.17
+242,-0.05,0.31
+905,0.18,0.07
+</code></pre>
+</details>
+
 </br>
 <p>where,</p>
 <ul>
@@ -134,6 +156,16 @@ We included the “feeling words” data as well in order to provide more exampl
     </tr>
   </tbody>
 </table>
+
+<details style="margin-top:8px;">
+  <summary><strong>CSV example <code>train_subtask2b.csv</code> </strong></summary>
+  <pre><code>user_id,disposition_change_valence,disposition_change_arousal
+137,-0.31,0.08
+242,0.12,-0.04
+905,-0.27,0.22
+</code></pre>
+</details>
+
 </br>
 <p>where,</p>
 <ul>
@@ -148,7 +180,7 @@ We included the “feeling words” data as well in order to provide more exampl
 
 
 <p style="font-size: 0.95em; color:#444; margin-top:6px;">
-  <strong>Note 1:</strong> This is one way to compute <code>disposition_change</code> labels. You are encouraged to try creative alternatives (e.g., divide each user’s data into more than two parts and compute differences between successive parts).
+  <strong>Note 1:</strong> This is one of the ways to compute instance– <code>disposition_change</code> label pairs. Note that for a given instance there is only one gold label. In the provided way, the texts corresponding to group 1 are the input instances used to predict the disposition label. You are encouraged to employ creative solutions to apply to the task which may include creating custom <code>disposition_change</code> labels (for e.g., dividing each user’s data into different number of parts and calculating disposition_change by subtracting one part from the next)
 </p>
 
 <p style="font-size: 0.95em; color:#444; margin-top:4px;">
