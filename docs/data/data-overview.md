@@ -145,12 +145,14 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
 <table style="border-collapse:collapse;width:100%;border:1px solid #ccc;font-size:14px;margin-top:6px;">
   <thead>
     <tr style="background:#f7f7f7;">
+			<th style="padding:6px 8px;border:1px solid #ccc;">group</th>
       <th style="padding:6px 8px;border:1px solid #ccc;">disposition_change_valence</th>
       <th style="padding:6px 8px;border:1px solid #ccc;">disposition_change_arousal</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+			<td style="padding:6px 8px;border:1px solid #ccc;">2</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">e.g., -0.31</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">e.g., 0.08</td>
     </tr>
@@ -159,18 +161,20 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
 
 <details style="margin-top:8px;">
   <summary><strong>CSV example <code>train_subtask2b.csv</code> </strong></summary>
-  <pre><code>user_id,disposition_change_valence,disposition_change_arousal
-137,-0.31,0.08
-242,0.12,-0.04
-905,-0.27,0.22
+  <pre><code>user_id,group,disposition_change_valence,disposition_change_arousal
+137,2,-0.31,0.08
+242,1,0.12,-0.04
+905,2,-0.27,0.22
 </code></pre>
 </details>
 
 </br>
 <p>where,</p>
 <ul>
-  <li><code><strong>disposition_change_valence</strong></code> is computed per user by subtracting the mean valence of the first half of their texts from the mean valence of the second half of their texts. Texts are sorted in ascending temporal order per user using <code><strong>timestamp</strong></code>.</li>
-  <li><code><strong>disposition_change_arousal</strong></code> is computed per user by subtracting the mean arousal of the first half of their texts from the mean arousal of the second half of their texts. Texts are sorted in ascending temporal order per user using <code><strong>timestamp</strong></code>.</li>
+	<li><code><strong>group </strong></code> is the marker to designate texts per user into two halves, with group=1 being the first half for a user and <code>group=2</code> being the second half for that user.
+
+  <li><code><strong>disposition_change_valence</strong></code> is computed per user by subtracting the mean valence of the first half of their texts (maked as group 1) from the mean valence of the second half of their texts. Texts are sorted in ascending temporal order per user using <code><strong>timestamp</strong></code>.</li>
+  <li><code><strong>disposition_change_arousal</strong></code> is computed per user by subtracting the mean arousal of the first half of their texts from the mean arousal of the second half of their texts (maked as group 2). Texts are sorted in ascending temporal order per user using <code><strong>timestamp</strong></code>.</li>
 </ul>
 
 
