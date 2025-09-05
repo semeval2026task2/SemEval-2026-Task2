@@ -152,7 +152,7 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
   </thead>
   <tbody>
     <tr>
-			<td style="padding:6px 8px;border:1px solid #ccc;">2</td>
+			<td style="padding:6px 8px;border:1px solid #ccc;">e.g., 2</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">e.g., -0.31</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">e.g., 0.08</td>
     </tr>
