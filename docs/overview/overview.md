@@ -79,7 +79,7 @@ This shared task aims to reduce this gap by introducing a **longitudinal** datas
 
 
 
-The data in this task consist of chronological texts (essays and feeling words) written by various people. Each text is associated with self‑reported **valence** (V) (0 – 4, highly negative to highly positive affect) and **arousal** (A) (0 – 2, low to high energy) scores.
+The data in this task consist of chronological texts (essays and feeling words) written by various people. Each text is associated with self‑reported **valence** (V) (-2 to 2, highly negative to highly positive affect) and **arousal** (A) (0 – 2, low to high energy) scores.
 | ![](https://i.imgur.com/L1hODvI.png) | ![](https://i.imgur.com/jk1LH7C.png) |
 |-------------------------------------|-------------------------------------|
 
