@@ -67,7 +67,7 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
 </ul>
 
 <div role="note" aria-label="Note" style="margin:12px 0;padding:12px 14px;border:1px solid #d4b106;background:#fffbe6;border-radius:8px;">
-  Predictions for <strong>valence</strong> and <strong>arousal</strong> should be real-valued numbers (floats).
+    The task is framed as a regression task; therefore, predictions for <strong>valence</strong> and <strong>arousal</strong> should be real-valued numbers (floats).
 </div>
 
 #### <u>Subtask 2 — Forecasting Future Variation in Affect:</u>
