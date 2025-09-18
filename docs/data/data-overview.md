@@ -6,9 +6,15 @@ Please register for the shared task to access the datasets on our [Codabench com
 
 ### Total dataset size
 - Observations: **5,285** (language, EMA emotion pairs)
-- Users: **182** (mean observations per user: **72.8**)
-- Essays: median number of tokens: **53.9**
-- Words: median number of tokens: **42.3**
+- Users: **182**
+- Average number of texts per user **72.8** (Average essays per users: 53.1; Average feeling-words per user: 	48.3)
+- Median number of texts per user 35.0 (Median essays per users: 18.00; Median feeling-words per user: 18.00)
+
+### Training dataset size
+- Observations: **2,764** (language, EMA emotion pairs)
+- Users: **137** 
+- Average number of texts per user 58.7 (Average essays per users: 40.3; Average feeling-words per user: 42.0)
+- Median number of texts per user 31.0 (Median essays per users: 14.00; Median feeling-words per user: 16.00)
 
 ### Data Format
 
