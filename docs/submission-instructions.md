@@ -21,17 +21,17 @@
   <tbody>
     <tr>
       <td style="padding:6px 10px;border:1px solid #ccc;"><code>pred_subtask1.csv</code></td>
-      <td style="padding:6px 10px;border:1px solid #ccc;"><code>text_id,pred_valence,pred_arousal</code></td>
+      <td style="padding:6px 10px;border:1px solid #ccc;"><code>user_id,text_id,pred_valence,pred_arousal</code></td>
     </tr>
   </tbody>
 </table>
 
 <details style="margin-top:8px;">
   <summary><strong>CSV example <code>pred_subtask1.csv</code></strong></summary>
-  <pre><code>text_id,pred_valence,pred_arousal
-1,0.27,0.42
-2,0.31,0.55
-3,-0.12,0.18</code></pre>
+  <pre><code>user_id,text_id,pred_valence,pred_arousal
+10,1,0.27,0.42
+11,2,0.31,0.55
+12,3,-0.12,0.18</code></pre>
 </details>
 
 <hr>

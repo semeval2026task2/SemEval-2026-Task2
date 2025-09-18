@@ -2,6 +2,13 @@
 ---
 
 Please register for the shared task to access the datasets on our [Codabench competition site](https://www.codabench.org/competitions/9963/) [https://www.codabench.org/competitions/9963/](https://www.codabench.org/competitions/9963/).
+## Data Statistics
+
+### Total dataset size
+- Observations: **5,285** (language, EMA emotion pairs)
+- Users: **182** (mean observations per user: **72.8**)
+- Essays: median number of tokens: **53.9**
+- Words: median number of tokens: **42.3**
 
 ### Data Format
 
@@ -62,12 +69,12 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
   <li><code><strong>timestamp</strong></code>: when the text was written</li>
   <li><code><strong>collection_phase</strong></code>: data collection phase (1–7)</li>
   <li><code><strong>is_words</strong></code>: boolean; <code>False</code> for essays, <code>True</code> for feeling words</li>
-  <li><code><strong>valence</strong></code>: valence score associated with the text, which is an ordinal measure ranging from -2 to 2 (highly negative to highly positive) </li>
-  <li><code><strong>arousal</strong></code>: arousal score associated with the text, which is an ordinal measure ranging from 0 to 2 (low to high )</li>
+  <li><code><strong>valence</strong></code>: valence score associated with the text</li>
+  <li><code><strong>arousal</strong></code>: arousal score associated with the text</li>
 </ul>
 
 <div role="note" aria-label="Note" style="margin:12px 0;padding:12px 14px;border:1px solid #d4b106;background:#fffbe6;border-radius:8px;">
-    The task is framed as a regression task; therefore, predictions for <strong>valence</strong> and <strong>arousal</strong> should be real-valued numbers (floats).
+  Predictions for <strong>valence</strong> and <strong>arousal</strong> should be real-valued numbers (floats).
 </div>
 
 #### <u>Subtask 2 — Forecasting Future Variation in Affect:</u>
