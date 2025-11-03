@@ -8,4 +8,5 @@
 2. [Frequently Asked Questions about SemEval](https://semeval.github.io/faq.html)
 3. [Paper Submission Requirements](https://semeval.github.io/paper-requirements.html)
 4. [Guidelines for Writing Papers](https://semeval.github.io/system-paper-template.html)
-5. Paper submission link (to be added)
+5. [How to submit on Codabench as an Organization](https://docs.google.com/document/d/1gJdSzk5ayBYVb3fhmjmAlWmMuh56aiySlZSMmHDXAA4/edit?usp=sharing)
+6. Paper submission link (to be added)
