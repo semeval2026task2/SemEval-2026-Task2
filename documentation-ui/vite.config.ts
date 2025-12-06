@@ -4,31 +4,13 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/SemEval-2026-Task2/',
-  publicDir: 'public',
-  // ---------- server settings ----------
+  base: mode === "production" ? "/SemEval-2026-Task2/" : "/", 
+  appType: "spa",
   server: {
     host: "::",
     port: 3000,
-    proxy: {
-      "/api": "http://localhost:8000",
-      "/docs": {
-        target: "http://localhost:8000",
-        changeOrigin: true,
-        cookieDomainRewrite: "localhost",   // strips the original cookie domain
-        cookiePathRewrite: { "/": "/" },    // keeps paths sane
-      },
-    }
   },
 
-  plugins: [
-    react(),
-    mode === "development" && componentTagger()
-  ].filter(Boolean),
-
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src")
-    }
-  }
+  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  resolve: { alias: { "@": path.resolve(__dirname, "./src") } },
 }));

@@ -8,11 +8,11 @@ import rehypeKatex from 'rehype-katex';
 import remarkBreaks from 'remark-breaks'
 import 'katex/dist/katex.min.css';
 
-/* ⬇️  only bring in the heavy editor hook in dev builds */
-const openEditor =
-  import.meta.env.DEV
-    ? (await import('@/hooks/useStackEdit')).useStackEdit()  // ← same hook
-    : () => {};                                             // ← no‑op stub
+// /* ⬇️  only bring in the heavy editor hook in dev builds */
+// const openEditor =
+//   import.meta.env.DEV
+//     ? (await import('@/hooks/useStackEdit')).useStackEdit()  // ← same hook
+//     : () => {};                                             // ← no‑op stub
 
 function withBase(path: string) {
   const base = import.meta.env.BASE_URL;
@@ -39,16 +39,6 @@ export default function MarkdownViewer({ file }: { file: string }) {
 
   return (
     <article className="prose prose-lg max-w-none">
-      {import.meta.env.DEV && (          /* ⬅️  button only in dev */
-        <div className="flex justify-end mb-2">
-          <button
-            onClick={() => openEditor(file, md, setMd)}
-            className="px-3 py-1 rounded-md bg-primary text-primary-foreground text-sm"
-          >
-            Edit ✏️
-          </button>
-        </div>
-      )}
 
       <ReactMarkdown
         remarkPlugins={[remarkGfm, remarkBreaks, remarkFootnotes, remarkMath]}

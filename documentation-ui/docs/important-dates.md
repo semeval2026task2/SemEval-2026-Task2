@@ -1,7 +1,7 @@
 # Important Dates
 ---
 - ~~Sample data: August 8 2025~~
-- Training Data Release: Sept 3 2025
+- ~~Training Data Release: Sept 3 2025~~
 - Participation Sign Up Deadline: January 9 2026
 - Evaluation **start**: January 10 2026
 - Evaluation **end**: by **January 31 2026**

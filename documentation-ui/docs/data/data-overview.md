@@ -2,29 +2,14 @@
 ---
 
 Please register for the shared task to access the datasets on our [Codabench competition site](https://www.codabench.org/competitions/9963/) [https://www.codabench.org/competitions/9963/](https://www.codabench.org/competitions/9963/).
-## Data Statistics
-
-### Total dataset size
-- Observations: **5,285** (language, EMA emotion pairs)
-- Users: **182**
-- Average number of texts per user **72.8** (Average essays per users: **53.1**; Average feeling-words per user: 	**48.3**)
-- Median number of texts per user **35.0** (Median essays per users: **18.00**; Median feeling-words per user: **18.00**)
-
-### Training dataset size
-- Observations: **2,764** (language, EMA emotion pairs)
-- Users: **137** 
-- Average number of texts per user **58.7** (Average essays per users: **40.3**; Average feeling-words per user: **42.0**)
-- Median number of texts per user **31.0** (Median essays per users: **14.00**; Median feeling-words per user: **16.00**)
 
 ### Data Format
 
 <p>
-The training and evaluation data consist of 5,285 longitudinal texts (“ecological essays and feeling words”) written by 182 authors collected over multiple years (2021 – 2024), consisting of real‑time essays and feeling words (e.g., happy, calm, sad, etc.) written by U.S. service‑industry workers about “how they are feeling”. More statistics on the data can be found in the <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/data-statistics">
-    Data Statistics
-  </a> tab.
+The training and evaluation data consist of longitudinal texts (“ecological essays and feeling words”) collected over multiple years (2021–2024), consisting of real-time essays and feeling words (e.g., happy, calm, sad, etc.) written by U.S. service-industry workers about “how they are feeling.” The essays and feeling words represent ecologically embedded affect—allowing the study of emotions in their natural environment—and are associated with self-reported affect over the circumplex.
 </p>
 <p>
-The way we describe and assign emotion words/labels to our feelings is a rich psychological process that is diagnostic of how our past experiences influence our current perception of how we relate to the world. Therefore, we include the "feeling words" data as well in our training and evaluation sets. Additionally, this increases the number of examples. <i>We suggest participants to consider modeling feeling-words separately or jointly with the essays.</i>
+We included the “feeling words” data as well in order to provide more examples and suggest participants consider modeling those separately or jointly with the essays.
 </p>
 
 #### <u>Subtask 1 — Longitudinal Affect Assessment:</u>
@@ -56,16 +41,6 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
     </tr>
   </tbody>
 </table>
-
-<details style="margin-top:8px;">
-  <summary><strong>CSV example <code>train_subtask1.csv</code></strong></summary>
-  <pre><code>user_id,text_id,text,timestamp,collection_phase,is_words,valence,arousal
-137,684,"I felt calm after the shift.",2023-08-16 09:32:00,1,True,0.20,0.30
-242,219,"Another example text here.",2023-08-20 18:05:12,2,False,-0.10,0.15
-905,507,"More text for the demo.",2023-09-01 07:01:45,3,True,0.00,0.80
-</code></pre>
-</details>
-
 </br>
 <p>where,</p>
 <ul>
@@ -130,16 +105,6 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
     </tr>
   </tbody>
 </table>
-
-<details style="margin-top:8px;">
-  <summary><strong>CSV example <code>train_subtask2a.csv</code> </strong></summary>
-  <pre><code>user_id,state_change_valence,state_change_arousal
-137,0.42,-0.17
-242,-0.05,0.31
-905,0.18,0.07
-</code></pre>
-</details>
-
 </br>
 <p>where,</p>
 <ul>
@@ -158,36 +123,22 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
 <table style="border-collapse:collapse;width:100%;border:1px solid #ccc;font-size:14px;margin-top:6px;">
   <thead>
     <tr style="background:#f7f7f7;">
-			<th style="padding:6px 8px;border:1px solid #ccc;">group</th>
       <th style="padding:6px 8px;border:1px solid #ccc;">disposition_change_valence</th>
       <th style="padding:6px 8px;border:1px solid #ccc;">disposition_change_arousal</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-			<td style="padding:6px 8px;border:1px solid #ccc;">e.g., 2</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">e.g., -0.31</td>
       <td style="padding:6px 8px;border:1px solid #ccc;">e.g., 0.08</td>
     </tr>
   </tbody>
 </table>
-
-<details style="margin-top:8px;">
-  <summary><strong>CSV example <code>train_subtask2b.csv</code> </strong></summary>
-  <pre><code>user_id,group,disposition_change_valence,disposition_change_arousal
-137,2,-0.31,0.08
-242,1,0.12,-0.04
-905,2,-0.27,0.22
-</code></pre>
-</details>
-
 </br>
 <p>where,</p>
 <ul>
-	<li><code><strong>group </strong></code> is the marker to designate texts per user into two halves, with group=1 being the first half for a user and <code>group=2</code> being the second half for that user.
-
-  <li><code><strong>disposition_change_valence</strong></code> is computed per user by subtracting the mean valence of the first half of their texts (maked as group 1) from the mean valence of the second half of their texts. Texts are sorted in ascending temporal order per user using <code><strong>timestamp</strong></code>.</li>
-  <li><code><strong>disposition_change_arousal</strong></code> is computed per user by subtracting the mean arousal of the first half of their texts from the mean arousal of the second half of their texts (maked as group 2). Texts are sorted in ascending temporal order per user using <code><strong>timestamp</strong></code>.</li>
+  <li><code><strong>disposition_change_valence</strong></code> is computed per user by subtracting the mean valence of the first half of their texts from the mean valence of the second half of their texts. Texts are sorted in ascending temporal order per user using <code><strong>timestamp</strong></code>.</li>
+  <li><code><strong>disposition_change_arousal</strong></code> is computed per user by subtracting the mean arousal of the first half of their texts from the mean arousal of the second half of their texts. Texts are sorted in ascending temporal order per user using <code><strong>timestamp</strong></code>.</li>
 </ul>
 
 
@@ -197,7 +148,7 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
 
 
 <p style="font-size: 0.95em; color:#444; margin-top:6px;">
-  <strong>Note 1:</strong> This is one of the ways to compute instance– <code>disposition_change</code> label pairs. Note that for a given instance there is only one gold label. In the provided way, the texts corresponding to group 1 are the input instances used to predict the disposition label. You are encouraged to employ creative solutions to apply to the task which may include creating custom <code>disposition_change</code> labels (for e.g., dividing each user’s data into different number of parts and calculating disposition_change by subtracting one part from the next)
+  <strong>Note 1:</strong> This is one way to compute <code>disposition_change</code> labels. You are encouraged to try creative alternatives (e.g., divide each user’s data into more than two parts and compute differences between successive parts).
 </p>
 
 <p style="font-size: 0.95em; color:#444; margin-top:4px;">
@@ -217,7 +168,5 @@ The way we describe and assign emotion words/labels to our feelings is a rich ps
 </p>
 
 <div style="margin:16px 0;padding:12px 14px;border:1px solid #d4b106;background:#fffbe6;border-radius:8px;">
-  Please go through the <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/submission-instructions">
-    Submission Instructions
-  </a>  for additional details.
+  Please go through the <strong>Submission Instructions</strong> for additional details.
 </div>

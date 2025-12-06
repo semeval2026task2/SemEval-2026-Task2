@@ -1,15 +1,21 @@
 // pages/Index.tsx
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import DocumentationHeader from "@/components/DocumentationHeader";
+import { navItems, slugToFile } from "@/components/DocumentationSidebar";
 import DocumentationSidebar from "@/components/DocumentationSidebar";
 import MarkdownViewer from "@/components/MarkdownViewer";     // renders the .md file
-import { navItems } from "@/components/DocumentationSidebar"; // export navItems there or move it here
 import { Menu } from 'lucide-react';
 
-export default function Index() {
+export default function Index({ initialFile }: { initialFile?: string }) {
   /* which file is currently displayed in the main pane */
+  const { slug } = useParams();
+  const file = slug ? slugToFile[slug] : (initialFile ?? slugToFile['']);
   const [activeFile, setActiveFile] = useState("/docs/overview/overview.md");
 
+  useEffect(() => {
+    if (file) setActiveFile(file);
+  }, [file]);
   /* sidebar open / close (mobile) */
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -27,9 +33,9 @@ export default function Index() {
         <DocumentationSidebar
           isOpen={isSidebarOpen}
           onClose={closeSidebar}
-          onSelectFile={setActiveFile}  // <<< key line: child -> parent
           items={navItems}
           activeFile={activeFile}
+          onSelectFile={() => { /* we navigate from the sidebar now */ }}
         />
       {/* Mobile menu button */}
         <button

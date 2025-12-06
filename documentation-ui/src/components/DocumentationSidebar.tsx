@@ -1,70 +1,59 @@
-import { useState } from 'react';
-import { ChevronRight } from 'lucide-react';
+// components/DocumentationSidebar.tsx
+import { useState } from "react";
+import { ChevronRight } from "lucide-react";
+import { useNavigate, useParams } from "react-router-dom";
 
+/* ---------- Types ---------- */
 export interface NavItem {
   title: string;
-  file: string;
+  file: string;   // markdown path
+  slug: string;   // url path segment
   children?: NavItem[];
 }
 
 interface DocumentationSidebarProps {
   isOpen: boolean;
   onClose: () => void;
-  onSelectFile: (file: string) => void;
+  onSelectFile: (file: string) => void; // kept for compatibility; unused
   items: NavItem[];
-  activeFile: string;
+  activeFile: string;                   // kept for compatibility; unused
 }
 
-/* ----------------- YOUR NAV TREE ----------------- */
+/* ---------- Your nav tree ---------- */
 export const navItems: NavItem[] = [
-  { title: 'Overview', file: '/docs/overview/overview.md' },
-  { title: 'Getting Started', file: '/docs/participate.md' },
-  {
-    title: 'Tasks',
-    file: '/docs/tasks/tasks.md',
-  },
-  {
-    title: 'Data',
-    file: '/docs/data/data-overview.md',
-  },
-  {
-    title: 'Important Dates',
-    file: '/docs/important-dates.md',
-  },
-  {
-    title: 'Evaluation',
-    file: '/docs/evaluation/evaluation.md',
-  },
-  { title: 'Resources', file: '/docs/resources.md' },
-  { title: 'Terms and Conditions', file: '/docs/terms-and-conditions.md' },
-  { title: 'Organizers', file: '/docs/organizers.md' },
+  { title: "Overview",            file: "/docs/overview/overview.md",     slug: "overview" },
+  { title: "Getting Started",     file: "/docs/participate.md",           slug: "getting-started" },
+  { title: "Tasks",               file: "/docs/tasks/tasks.md",           slug: "tasks" },
+  { title: "Data",                file: "/docs/data/data-overview.md",    slug: "data" },
+  { title: "Important Dates",     file: "/docs/important-dates.md",       slug: "important-dates" },
+  { title: "Submission Instructions", file: "/docs/submission-instructions.md", slug: "submission-instructions" },
+  { title: "Evaluation",          file: "/docs/evaluation/evaluation.md", slug: "evaluation" },
+  { title: "Resources",           file: "/docs/resources.md",             slug: "resources" },
+  { title: "Terms and Conditions",file: "/docs/terms-and-conditions.md",  slug: "terms-and-conditions" },
+  { title: "Organizers",          file: "/docs/organizers.md",            slug: "organizers" },
 ];
 
-/* -------------- SIDEBAR COMPONENT ---------------- */
+export const slugToFile: Record<string, string> =
+  Object.fromEntries(navItems.map(i => [i.slug, i.file]));
+
+/* ---------- Sidebar component ---------- */
 const DocumentationSidebar = ({
   isOpen,
   onClose,
-  onSelectFile,
   items,
-  activeFile,
 }: DocumentationSidebarProps) => {
-  /**
-   * At most ONE top‑level section is “expanded”.
-   * Store its index (or null for none).
-   */
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(0); // default: first section open
+  // If you later add collapsible parents, this controls which parent is open.
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  /* --------------------------------------------- */
+  const navigate = useNavigate();
+  const { slug: currentSlug = "overview" } = useParams(); // exact route slug (basename handled by Router)
+
   const handleTopLevelClick = (index: number, item: NavItem) => {
-    const hasChildren = item.children && item.children.length > 0;
-
+    const hasChildren = !!item.children?.length;
     if (hasChildren) {
-      // Toggle this section and collapse all others
       setExpandedIndex(prev => (prev === index ? null : index));
     } else {
-      // Leaf: select the file, collapse every section
-      setExpandedIndex(null);
-      onSelectFile(item.file);
+      navigate(item.slug ? `/${item.slug}` : "/");
       onClose();
     }
   };
@@ -85,44 +74,39 @@ const DocumentationSidebar = ({
           fixed md:static top-0 left-0 h-screen md:h-screen
           w-64 bg-sidebar border-r border-border z-50
           transform transition-transform duration-300 ease-in-out
-          ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
+          ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
           flex flex-col
         `}
       >
-      <div className="px-6 pt-6 pb-4 flex flex-col gap-1 select-none">
-        {/* leaf logo — replace with your own SVG or image if you like */}
+        <div className="px-6 pt-6 pb-4 flex flex-col gap-1 select-none">
+          <span className="font-extrabold text-xl md:text-2xl leading-tight tracking-tight">
+            SemEval&nbsp;2026 Task 2
+          </span>
+          <span className="text-sm md:text-base font-semibold leading-snug py-8">
+            Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
+          </span>
+        </div>
 
-        <span className="font-extrabold text-xl md:text-2xl leading-tight tracking-tight">
-          SemEval 2026 Task 2
-        </span>
-        <span className="text-sm md:text-base font-semibold leading-snug py-8">
-          Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
-        </span>
-      </div>
         {/* Navigation */}
         <nav className="flex-1 overflow-y-auto">
           <ul className="py-0">
             {items.map((item, index) => {
-              const hasChildren = item.children && item.children.length > 0;
+              const hasChildren = !!item.children?.length;
               const isExpanded = expandedIndex === index;
 
-              // Highlight rule:
-              // • expanded parent OR
-              // • leaf whose file === activeFile
-              const isActiveLeaf =
-                !hasChildren && item.file === activeFile;
+              // ✅ Leaves: active when their slug matches the current route slug
+              // ✅ Parents: show "active" style only when expanded
+              const isSelected = hasChildren
+                ? isExpanded
+                : item.slug === currentSlug;
 
               const containerClasses = `
                 flex items-center px-4 py-2 cursor-pointer transition-colors
-                ${
-                  isExpanded || isActiveLeaf
-                    ? 'bg-nav-active text-primary-foreground'
-                    : 'hover:bg-nav-hover'
-                }
+                ${isSelected ? "bg-nav-active text-primary-foreground" : "hover:bg-nav-hover"}
               `;
 
               return (
-                <li key={index}>
+                <li key={item.slug}>
                   <div
                     className={containerClasses}
                     onClick={() => handleTopLevelClick(index, item)}
@@ -130,51 +114,41 @@ const DocumentationSidebar = ({
                     {hasChildren && (
                       <ChevronRight
                         size={16}
-                        className={`
-                          mr-2 transition-transform duration-200
-                          ${
-                            isExpanded
-                              ? 'rotate-90 text-primary-foreground'
-                              : 'text-muted-foreground'
-                          }
-                        `}
+                        className={`mr-2 transition-transform duration-200 ${isExpanded ? "rotate-90" : ""}`}
                       />
                     )}
-                    <span className="text-base md:text-base lg:text-base font-small">
-                      {item.title}
-                    </span>
+                    <span className="text-base">{item.title}</span>
                   </div>
 
-                  {/* Children list */}
                   {hasChildren && (
                     <ul
                       className={`
                         overflow-hidden transition-all duration-300 ease-in-out
-                        ${isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
+                        ${isExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
                       `}
                     >
-                      {item.children!.map((child, childIdx) => (
-                        <li key={childIdx}>
-                          <a
-                            href="#"
-                            className={`
-                              block pl-10 pr-4 py-2.5 text-base md:text-lg transition-colors
-                              ${
-                                child.file === activeFile
-                                  ? 'bg-nav-hover'
-                                  : 'text-muted-foreground hover:bg-nav-hover hover:text-foreground'
-                              }
-                            `}
-                            onClick={e => {
-                              e.preventDefault();
-                              onSelectFile(child.file);
-                              onClose();
-                            }}
-                          >
-                            {child.title}
-                          </a>
-                        </li>
-                      ))}
+                      {item.children!.map(child => {
+                        const childActive = child.slug === currentSlug; // slug-based
+                        return (
+                          <li key={child.slug}>
+                            <a
+                              href={`/${child.slug}`}
+                              className={`block pl-10 pr-4 py-2.5 text-base transition-colors ${
+                                childActive
+                                  ? "bg-nav-hover"
+                                  : "text-muted-foreground hover:bg-nav-hover hover:text-foreground"
+                              }`}
+                              onClick={e => {
+                                e.preventDefault();
+                                navigate(`/${child.slug}`);
+                                onClose();
+                              }}
+                            >
+                              {child.title}
+                            </a>
+                          </li>
+                        );
+                      })}
                     </ul>
                   )}
                 </li>
