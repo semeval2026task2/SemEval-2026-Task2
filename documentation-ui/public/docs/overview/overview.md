@@ -40,29 +40,66 @@
     border-radius: 12px;
     font-size: 1.15rem;
     line-height: 1.5;
-    margin: 16px 0;
+    margin-bottom: 16px; 
     box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
   }
   .announcement a { font-weight: 600; text-decoration: none; }
   .announcement a:hover { text-decoration: underline; }
+
+  details {
+    margin-bottom: 20px;
+  }
+  
+  summary {
+    text-align: right;  /* <--- This moves the text to the right */
+    cursor: pointer;
+    color: #777;        /* Made slightly lighter to be subtle */
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 4px 0;
+    user-select: none;
+    outline: none;
+    list-style: none; 
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary::before {
+    content: '+ ';
+    display: inline-block;
+    width: 15px;
+    font-weight: bold;
+  }
+  
+  details[open] summary::before { content: '− '; }
+  
+  details[open] summary { margin-bottom: 10px; }
 </style>
 
 <div class="announcement" role="status" aria-live="polite">
-  <strong>Training data released!!!</strong> Have fun participating in the shared task competition!!
+  <strong>[Dec 6, 2025] Evaluation Details released!</strong> Check it out <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/evaluation">here</a>. Evaluation phase will begin January 10, 2026. Keep an eye out for the evaluation data release shortly before that.
 </div>
 
-<div class="announcement" role="status" aria-live="polite">
-  <strong>The competition is now open</strong> and participation sign-up ends
-  <strong>January 9, 2026</strong>. Please see the
-  <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/important-dates">
-    Important Dates
-  </a>
-  for the estimated timeline and 
-  <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/getting-started">
-    Getting Started
-  </a> 
- for instructions
-</div>
+<details>
+  <summary>View older announcements</summary>
+  
+  <div class="announcement" role="status" aria-live="polite">
+    <strong>[Sep 3, 2025] Training data released!!!</strong> Have fun participating in the shared task competition!!
+  </div>
+
+  <div class="announcement" role="status" aria-live="polite">
+    <strong>[Aug 8, 2025] The competition is now open</strong> and participation sign-up ends
+    <strong>January 9, 2026</strong>. Please see the
+    <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/important-dates">
+      Important Dates
+    </a>
+    for the estimated timeline and 
+    <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/getting-started">
+      Getting Started
+    </a> 
+   for instructions.
+  </div>
+</details>
 
 
 ![](https://i.imgur.com/okG0fuV.png)
