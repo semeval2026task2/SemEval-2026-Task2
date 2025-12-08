@@ -77,7 +77,7 @@
 </style>
 
 <div class="announcement" role="status" aria-live="polite">
-  <strong>[Dec 6, 2025] Evaluation Details released!</strong> Check it out <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/evaluation">here</a>. Evaluation phase will begin January 10, 2026. Keep an eye out for the evaluation data release shortly before that.
+  <strong>[Dec 6, 2025] Evaluation Details released!</strong> Check it out at <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/evaluation">Evaluation</a>. Evaluation phase will begin January 10, 2026. Keep an eye out for the evaluation data release shortly before that.
 </div>
 
 <details>
