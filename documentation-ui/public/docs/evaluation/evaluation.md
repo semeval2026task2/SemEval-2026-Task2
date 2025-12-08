@@ -2,6 +2,8 @@
 
 All submissions are evaluated using **Pearson r** and **Mean Absolute Error (MAE)**, applied in subtask-specific ways. Each subtask requires predictions for two outcomes: **valence** and **arousal**.
 
+Evaluation script can be found on [Github](https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/semeval2026-task2-eval)
+
 ---
 
 ## Subtask 1 — Longitudinal Affect Assessment
