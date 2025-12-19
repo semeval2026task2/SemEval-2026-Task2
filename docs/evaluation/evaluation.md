@@ -44,13 +44,13 @@ $$
 Between-user and within-user correlations are combined using Fisher’s z-transformation:
 
 $$
-r_{\text{composite}} = \tanh\left(\frac{\arctan(r_{\text{within}}) + \arctan(r_{\text{between}})}{2}\right)
+r_{\text{composite}} = \tanh\left(\frac{\text{arctanh}(r_{\text{within}}) + \text{arctanh}(r_{\text{between}})}{2}\right)
 $$
 
 Similarly, $\text{MAE}_{\text{composite}}$ is computed:
 
 $$
-mae_{\text{composite}} = \tanh\left(\frac{\arctan(mae_{\text{within}}) + \arctan(mae_{\text{between}})}{2}\right)
+mae_{\text{composite}} = \tanh\left(\frac{\text{arctanh}(mae_{\text{within}}) + \text{arctanh}(mae_{\text{between}})}{2}\right)
 $$
 
 ### Leaderboard policy for Subtask 1:
