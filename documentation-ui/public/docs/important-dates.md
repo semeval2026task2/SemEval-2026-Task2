@@ -1,11 +1,20 @@
 # Important Dates
 ---
-- ~~Sample data: August 8 2025~~
-- Training Data Release: Sept 3 2025
-- Participation Sign Up Deadline: January 9 2026
-- Evaluation **start**: January 10 2026
-- Evaluation **end**: by **January 31 2026**
-- Paper submission **due**: February 2026
-- Notification to authors: March 2026
-- Camera‑ready **due**: April 2026
-- **SemEval workshop**: Summer 2026 *(co‑located with a major NLP conference)*
+## Registration & Data Release Dates
+---
+- ~~August 8 2025: Sample data~~
+- ~~September 3 2025: Training Data Release~~
+- **January 9 2026: Participation Sign Up Deadline**
+
+## Evaluation & Submission Schedule
+---
+- **January 5 2026**: Evaluation Data and Baselines Release
+- **January 12 – January 25 2026**: Evaluation Phase (System submissions open)
+- **January 20 – February 1 2026**: Mandatory Participant Survey (Must include system summary & one volunteer reviewer)
+- **January 25 2026**: Official System Submission Deadline
+- **February 5 2026**: Leaderboard Release (Gold labels released shortly after)
+- **February 25 2026**: System Description Paper Submission Deadline
+- **March 18 2026**: Reviews Deadline
+- **March 25 2026**: Notification to Authors
+- **April 25 2026**: Camera-Ready Deadline
+- **Summer 2026**: SemEval Workshop
