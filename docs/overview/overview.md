@@ -75,16 +75,23 @@
   
   details[open] summary { margin-bottom: 10px; }
 </style>
+
+<div class="announcement" role="status" aria-live="polite">
+  <strong>[Jan 5, 2026] Evaluation Data & Baselines Released!</strong> 
+  Test data is stored in the <strong>Files</strong> section on CodaBench named <code>TEST_RELEASE_5JAN2026</code>. 
+  For details, please check the <strong>Baselines</strong> and <strong>Test Data</strong> tabs.
+</div>
+
 <div class="announcement" role="status" aria-live="polite">
   <strong>[Dec 17, 2025] Format Checker released!</strong> Please try submitting your predictions.zip with prediction CSV (check Submission Instruction for details). Evaluation phase will begin January 10, 2026. Keep an eye out for the evaluation data release shortly before that.
 </div>
-<div class="announcement" role="status" aria-live="polite">
-  <strong>[Dec 6, 2025] Evaluation Details released!</strong> Check it out at <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/evaluation">Evaluation</a>. Evaluation phase will begin January 10, 2026. Keep an eye out for the evaluation data release shortly before that.
-</div>
+
 
 <details>
   <summary>View older announcements</summary>
-  
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Dec 6, 2025] Evaluation Details released!</strong> Check it out at <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/evaluation">Evaluation</a>. Evaluation phase will begin January 10, 2026. Keep an eye out for the evaluation data release shortly before that.
+</div>
   <div class="announcement" role="status" aria-live="polite">
     <strong>[Sep 3, 2025] Training data released!!!</strong> Have fun participating in the shared task competition!!
   </div>
