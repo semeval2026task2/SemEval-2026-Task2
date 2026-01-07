@@ -1,4 +1,4 @@
-# Test Data
+# Test Data (Released Jan 5, 2025)
 ---
 ### Subtask 1: Longitudinal Affect Assessment (`test_subtask1.csv`)
 

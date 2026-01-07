@@ -1,4 +1,4 @@
-# Data 
+# Training Data (Released Sap 3, 2025)
 ---
 
 Please register for the shared task to access the datasets on our [Codabench competition site](https://www.codabench.org/competitions/9963/) [https://www.codabench.org/competitions/9963/](https://www.codabench.org/competitions/9963/).

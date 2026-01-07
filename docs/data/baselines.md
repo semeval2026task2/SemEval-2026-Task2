@@ -1,4 +1,4 @@
-# Baselines
+# Baselines (Released Jan 5, 2025)
 ---
 We use the following 2 methods for our baselines:
 
