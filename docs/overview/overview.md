@@ -77,7 +77,7 @@
 </style>
 
 <div class="announcement" role="status" aria-live="polite">
-  <strong>[Jan 5, 2026] Evaluation Data & Baselines Released!</strong> 
+  <strong>[Jan 5, 2026] Evaluation Data & Baselines Released! and Evaluation Phase has Started!</strong> 
   Test data is stored in the <strong>Files</strong> section on CodaBench named <code>TEST_RELEASE_5JAN2026</code>. 
   For details, please check the <strong>Baselines</strong> and <strong>Test Data</strong> tabs.
 </div>
