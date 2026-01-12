@@ -23,18 +23,37 @@ interface DocumentationSidebarProps {
 export const navItems: NavItem[] = [
   { title: "Overview",            file: "/docs/overview/overview.md",     slug: "overview" },
   { title: "Getting Started",     file: "/docs/participate.md",           slug: "getting-started" },
-  { title: "Tasks",               file: "/docs/tasks/tasks.md",           slug: "tasks" },
-  { title: "Data",                file: "/docs/data/data-overview.md",    slug: "data" },
   { title: "Important Dates",     file: "/docs/important-dates.md",       slug: "important-dates" },
+  { title: "Tasks",               file: "/docs/tasks/tasks.md",           slug: "tasks" },
+  { title: "Data",                file: "",    slug: "data", children: [
+    { title: "Training Data",                file: "/docs/data/data-overview.md",    slug: "training-data" },
+    { title: "Test Data",                file: "/docs/data/test-data.md",    slug: "test-data" },
+  ] },
+  
+  
+  
   { title: "Submission Instructions", file: "/docs/submission-instructions.md", slug: "submission-instructions" },
-  { title: "Evaluation",          file: "/docs/evaluation/evaluation.md", slug: "evaluation" },
+  { title: "Evaluation",                file: "",    slug: "evaluation", children: [
+    { title: "Evaluation",          file: "/docs/evaluation/evaluation.md", slug: "evaluation" },
+    { title: "Baselines",                file: "/docs/data/baselines.md",    slug: "baselines" },
+  ] },
+  
   { title: "Resources",           file: "/docs/resources.md",             slug: "resources" },
   { title: "Terms and Conditions",file: "/docs/terms-and-conditions.md",  slug: "terms-and-conditions" },
   { title: "Organizers",          file: "/docs/organizers.md",            slug: "organizers" },
 ];
 
-export const slugToFile: Record<string, string> =
-  Object.fromEntries(navItems.map(i => [i.slug, i.file]));
+export const slugToFile: Record<string, string> = Object.fromEntries(
+  navItems.flatMap((item) => {
+    // 1. Start with the item itself
+    const allItems = [item];
+    // 2. If it has children, add them to the list
+    if (item.children) {
+      allItems.push(...item.children);
+    }
+    return allItems;
+  }).map((i) => [i.slug, i.file]) // Map every item (parent & child) to its file
+);
 
 /* ---------- Sidebar component ---------- */
 const DocumentationSidebar = ({

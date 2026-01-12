@@ -93,21 +93,3 @@ $$
 
 *Where $u$ is a user.*
 
-<div role="note" aria-label="Note" style="margin:16px 0;padding:12px 14px;border:1px solid #d4b106;background:#fffbe6;border-radius:8px;">
-  <p style="margin-top:0; font-size:1.05em;"><strong><i>NOTE on Future Evaluation Data Release:</strong></i></p>
-
-  <p><strong>Subtask 1: Longitudinal Affect Assessment</strong></p>
-  <p>The evaluation data for subtask1 will consist of 1,737 longitudinal texts (“ecological essays and feeling words”) written by 91 authors.</p>
-  <p>The data will have an additional marker:</p>
-  <ul>
-    <li><code><strong>is_seen_user</strong></code>: a boolean to identify the users whose partial data was released in the training set.</li>
-  </ul>
-
-  <p><strong>Subtask 2 — Forecasting Future Variation in Affect</strong></p>
-  <p>The evaluation data for subtask2 will not have any additional data release. We will release an additional marker to submit the forecasted outcomes for the users under evaluation:</p>
-  <ul>
-    <li><code><strong>is_forecasting_user</strong></code>: a boolean to identify the users whose partial data was released in the training set and will be evaluated for forecasting <code>state_change</code> and <code>disposition_change</code> outcomes.</li>
-  </ul>
-
-  <p style="margin-bottom:0;">Please take a look at the <strong>Data</strong> section to learn more about the data format and statistics.</p>
-</div>
