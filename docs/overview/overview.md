@@ -76,8 +76,7 @@
   details[open] summary { margin-bottom: 10px; }
 </style>
 <div class="announcement" role="status" aria-live="polite">
-  <strong>[Jan 8] Test Data Updated!</strong> We have updated Evaluation Data stored in the <strong>Files</strong> section on CodaBench named <code>TEST_RELEASE_5JAN2026</code>
-  Note: Scores will be released along with the leaderboard.
+  <strong>[Jan 8] Test Data Updated!</strong> Evaluation Data Updated in the <strong>Files</strong> section on Codabench named <code>TEST_RELEASE_5JAN2026</code>. </br> <strong>Note:</strong> Scores will be released along with the leaderboard.
 </div>
 <div class="announcement" role="status" aria-live="polite">
   <strong>[Jan 5, 2026] Evaluation Data & Baselines Released! and Evaluation Phase has Started!</strong> 
