@@ -1,4 +1,4 @@
-# Important Dates
+# Important Dates (all deadlines are 11:59pm AOE)
 ---
 ## Registration & Data Release Dates
 ---
