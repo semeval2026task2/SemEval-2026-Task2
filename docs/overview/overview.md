@@ -83,17 +83,20 @@
 <div class="announcement" role="status" aria-live="polite">
   <strong>[Jan 8]</strong> Evaluation Data Updated in the <strong>Files</strong> section on Codabench named <code>TEST_RELEASE_5JAN2026</code>. </br> <strong>Note:</strong> Scores will be released along with the leaderboard.
 </div>
-<div class="announcement" role="status" aria-live="polite">
-  <strong>[Jan 5, 2026] Evaluation Data & Baselines Released! and Evaluation Phase has Started!</strong> 
-  Test data is stored in the <strong>Files</strong> section on CodaBench named <code>TEST_RELEASE_5JAN2026</code>. 
-  For details, please check the <strong>Baselines</strong> and <strong>Test Data</strong> tabs.
-</div>
+
 
 
 
 
 <details>
   <summary>View older announcements</summary>
+
+<div class="announcement" role="status" aria-live="polite">
+  <strong>[Jan 5, 2026] Evaluation Data & Baselines Released! and Evaluation Phase has Started!</strong> 
+  Test data is stored in the <strong>Files</strong> section on CodaBench named <code>TEST_RELEASE_5JAN2026</code>. 
+  For details, please check the <strong>Baselines</strong> and <strong>Test Data</strong> tabs.
+</div>
+
   <div class="announcement" role="status" aria-live="polite">
   <strong>[Dec 17, 2025] Format Checker released!</strong> Please try submitting your predictions.zip with prediction CSV (check Submission Instruction for details). Evaluation phase will begin January 10, 2026. Keep an eye out for the evaluation data release shortly before that.
 </div>
