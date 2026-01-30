@@ -8,4 +8,5 @@
 2. [Frequently Asked Questions about SemEval](https://semeval.github.io/faq.html)
 3. [Paper Submission Requirements](https://semeval.github.io/paper-requirements.html)
 4. [Guidelines for Writing Papers](https://semeval.github.io/system-paper-template.html)
-5. Paper submission link (to be added)
+5. [How to Write a Task Description Paper](https://github.com/nedjmaou/Writing_a_task_description_paper) (Credit: Nedjma Ousidhoum and Shamsuddeen Hassan Muhammad)
+6. Paper submission link (to be added)
