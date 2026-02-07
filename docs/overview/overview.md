@@ -75,14 +75,15 @@
   
   details[open] summary { margin-bottom: 10px; }
 </style>
+<div class="announcement" role="status" aria-live="polite">
+  <strong>[Feb 6]</strong> Due to technical issues, <strong> the scores leaderboard is delayed</strong>.We are working to release it by tomorrow <strong>(Feb 7)</strong>. Stay tuned!
+</div>
 
 <div class="announcement" role="status" aria-live="polite">
   <strong>[Jan 27]</strong> System submission deadline extended to accommodate Sunday and Codabench downtime. <strong>New deadline: January 28</strong>
 </div>
 
-<div class="announcement" role="status" aria-live="polite">
-  <strong>[Jan 8]</strong> Evaluation Data Updated in the <strong>Files</strong> section on Codabench named <code>TEST_RELEASE_5JAN2026</code>. </br> <strong>Note:</strong> Scores will be released along with the leaderboard.
-</div>
+
 
 
 
@@ -90,6 +91,9 @@
 
 <details>
   <summary>View older announcements</summary>
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Jan 8]</strong> Evaluation Data Updated in the <strong>Files</strong> section on Codabench named <code>TEST_RELEASE_5JAN2026</code>. </br> <strong>Note:</strong> Scores will be released along with the leaderboard.
+</div>
 
 <div class="announcement" role="status" aria-live="polite">
   <strong>[Jan 5, 2026] Evaluation Data & Baselines Released! and Evaluation Phase has Started!</strong> 
