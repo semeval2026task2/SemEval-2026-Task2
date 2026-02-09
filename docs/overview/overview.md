@@ -81,7 +81,7 @@
 <div class="announcement" role="status" aria-live="polite">
 
 
-  <strong>[Feb 6]</strong> Due to technical issues, <strong> the scores leaderboard is delayed</strong>.We are working to release it by tomorrow <strong>(Feb 7)</strong>. Stay tuned!
+  <strong>[Feb 6]</strong> Due to technical issues, <strong> the scores leaderboard is delayed</strong>. We are working to release it by tomorrow <strong>(Feb 7)</strong>. Stay tuned!
 </div>
 
 <div class="announcement" role="status" aria-live="polite">
