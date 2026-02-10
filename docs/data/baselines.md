@@ -38,7 +38,6 @@ We use an average of text embeddings of the first half of the texts from each us
   <img src="https://i.imgur.com/o8XJDCg.png" alt="Baselines Table" width="90%" />
 </div>
 <div align="center">
-  <img src="https://i.imgur.com/PJwsA8H.png" alt="Baselines Table" width="90%" />
+  <img src="https://i.imgur.com/OrLIppc.png" alt="Baselines Table" width="90%" />
 </div>
 
-<span style="font-style: italic; margin-left: 5px;">Note: The additional metrics are using the <strong>Linear(BERT)</strong> baseline.</span>
