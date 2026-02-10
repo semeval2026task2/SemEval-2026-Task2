@@ -75,16 +75,21 @@
   
   details[open] summary { margin-bottom: 10px; }
 </style>
+
+<div class="announcement" role="status" aria-live="polite">
+  <strong>[Feb 9]</strong> Additional baseline metrics for Subtask 1 have been released. These updates are available in the <strong>Baselines</strong> tab; please note that these metrics are derived from the Linear(BERT) baseline.
+</div>
 <div class="announcement" role="status" aria-live="polite">
   <strong>[Feb 7]</strong> Your scores are released individually to your team member's email who filled out the mandatory form. The leaderboard will be finalized and released later (tentatively Feb 13)
 </div>
 
-<div class="announcement" role="status" aria-live="polite">
-  <strong>[Feb 6]</strong> Due to technical issues, <strong> the scores leaderboard is delayed</strong>. We are working to release it by tomorrow <strong>(Feb 7)</strong>. Stay tuned!
-</div>
 
 <details>
   <summary>View older announcements</summary>
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Feb 6]</strong> Due to technical issues, <strong> the scores leaderboard is delayed</strong>. We are working to release it by tomorrow <strong>(Feb 7)</strong>. Stay tuned!
+</div>
+
   <div class="announcement" role="status" aria-live="polite">
   <strong>[Jan 27]</strong> System submission deadline extended to accommodate Sunday and Codabench downtime. <strong>New deadline: January 28</strong>
 </div>
