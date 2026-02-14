@@ -13,7 +13,7 @@
 - ~~**January 24 – February 1 2026**: Mandatory Participant Survey (Must include system summary & one volunteer reviewer)~~
 - ~~**January 26 2026**~~ **January 28 2026**: Official System Submission Deadline
 - ~~**February 5 2026**:~~ **February 7 2026** Scores Released
-- **Tentative February 13, 2026** Leaderboard Release (Gold labels released shortly after)
+- ~~**February 14, 2026** Leaderboard Release~~ (Gold labels released shortly after)
 - **February 25 2026**: System Description Paper Submission Deadline
 - **March 18 2026**: Reviews Deadline
 - **March 25 2026**: Notification to Authors
