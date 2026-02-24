@@ -30,4 +30,4 @@
 
 Please make sure to select the correct track as shown in the screenshot here:
 
-<img src="https://i.imgur.com/IhBZSSB.png" alt="alt text" width="800">
+<img src="https://i.imgur.com/X8aSbkU.png" alt="alt text" width="800">
