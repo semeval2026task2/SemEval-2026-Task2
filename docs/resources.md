@@ -10,4 +10,4 @@
 4. [Guidelines for Writing Papers](https://semeval.github.io/system-paper-template.html)
 5. [How to Write a Task Description Paper](https://github.com/nedjmaou/Writing_a_task_description_paper) (Credit: Nedjma Ousidhoum and Shamsuddeen Hassan Muhammad)
 6. [Feb 4 2026 Paper Writing Office Hours Slides](https://docs.google.com/presentation/d/1igvxItL7ub2hKoAg4PEJozY3L0MrOwazHKhT4ObDlHE/edit?usp=sharing)
-7. Paper submission link (to be added)
+7. [Paper Submission Link] (https://softconf.com/acl2026/semeval2026/user/scmd.cgi?scmd=submitPaperCustom&pageid=0)
