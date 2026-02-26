@@ -7,6 +7,7 @@
     SemEval Paper Submission Checklist
   </a> for you to go through as you finalize your submissions to avoid any issues later
 </div>
+
 1. Please go through the [Resources](https://semeval2026task2.github.io/SemEval-2026-Task2/resources) shared, specifically ensuring [Paper Submission Requirements](https://semeval.github.io/paper-requirements.html) are met.
 
 2. Anonymous submissions are not required. Please add author details in your submissions.
