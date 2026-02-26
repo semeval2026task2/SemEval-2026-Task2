@@ -79,11 +79,12 @@
   details[open] summary { margin-bottom: 10px; }
 </style>
 <div class="announcement" role="status" aria-live="polite">
-    <strong>[Feb 23]</strong> Gold Labels Released; <strong>Paper Submission Instructions tab</strong> released and deadline extended by 2 days upon request (please see forum post).
+    <strong>[Feb 26]</strong> Paper Submissions Checklist released to help you finalize your paper submissions. Please check the <strong>Paper Submission Instructions Tab</strong>.
 </div>
 <div class="announcement" role="status" aria-live="polite">
-  <strong>[Feb 20]</strong> Leaderboard Ranking Released; Post-Deadline-Submissions Scores Released! Please view Leaderboard tab for more details
+    <strong>[Feb 23]</strong> Gold Labels Released; <strong>Paper Submission Instructions tab</strong> released and deadline extended by 2 days upon request (please see forum post).
 </div>
+
 
 
 
@@ -91,6 +92,9 @@
 
 <details>
   <summary>View older announcements</summary>
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Feb 20]</strong> Leaderboard Ranking Released; Post-Deadline-Submissions Scores Released! Please view Leaderboard tab for more details
+</div>
   <div class="announcement" role="status" aria-live="polite">
   <strong>[Feb 14]</strong> Leaderboard Released! Please view Leaderboard tab for more details
 </div>
