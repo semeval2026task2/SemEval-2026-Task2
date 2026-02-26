@@ -3,8 +3,11 @@
 <div role="note" aria-label="Note" style="margin:16px 0;padding:12px 14px;border:1px solid #d4b106;background:#fffbe6;border-radius:8px;">
   <p style="margin-top:0; font-size:1.05em;"><strong><i>NOTE: </strong></i>System Description Paper can be up to 5 pages. Once accepted, 1 additional page allowed to accommodate reviewer feedback.</p>
  </p>
+   <strong>[Feb 26 2026]</strong> We have created the <a href="https://docs.google.com/document/d/1rHHFYPh6nvjxfn9QOJFF013JwuQEFUTwGc_5rgMb_K0/edit?usp=sharing" target="_blank" style="color: #0056b3; font-weight: bold; text-decoration: underline;">
+    SemEval Paper Submission Checklist
+  </a> for you to go through as you finalize your submissions to avoid any issues later
 </div>
-1. Please go through the [Resources](https://semeval2026task2.github.io/SemEval-2026-Task2/resources) shared, specifically ensuring [Paper Submission Requirements](https://semeval.github.io/paper-requirements.html) are met. We have created the [SemEval_Paper_Submission_Checklist](https://docs.google.com/document/d/1rHHFYPh6nvjxfn9QOJFF013JwuQEFUTwGc_5rgMb_K0/edit?usp=sharing) for you to go through as you finalize your submissions to avoid any issues later
+1. Please go through the [Resources](https://semeval2026task2.github.io/SemEval-2026-Task2/resources) shared, specifically ensuring [Paper Submission Requirements](https://semeval.github.io/paper-requirements.html) are met.
 
 2. Anonymous submissions are not required. Please add author details in your submissions.
 
