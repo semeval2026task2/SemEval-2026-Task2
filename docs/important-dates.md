@@ -15,7 +15,7 @@
 - ~~**February 5 2026**: **February 7 2026** Scores Released~~
 - ~~**February 14, 2026** Leaderboard Release (Gold labels released shortly after)~~
 - ~~**February 25 2026**~~ **February 27 2026**: System Description Paper Submission Deadline
-- **March 18 2026**: Reviews Deadline
+- **March 30 2026**: Reviews Deadline
 - **March 25 2026**: Notification to Authors
 - **April 25 2026**: Camera-Ready Deadline
 - **Summer 2026**: SemEval Workshop
