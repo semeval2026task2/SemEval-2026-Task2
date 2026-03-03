@@ -79,6 +79,9 @@
   details[open] summary { margin-bottom: 10px; }
 </style>
 <div class="announcement" role="status" aria-live="polite">
+    <strong>[March 2]</strong> Reviewing Assignments Sent Out. Please check the softconf/START portal. Due: March 18, 2026.
+</div>
+<div class="announcement" role="status" aria-live="polite">
     <strong>[Feb 26]</strong> Paper Submissions Checklist released to help you finalize your paper submissions. Please check the <strong>Paper Submission Instructions Tab</strong>.
 </div>
 <div class="announcement" role="status" aria-live="polite">
