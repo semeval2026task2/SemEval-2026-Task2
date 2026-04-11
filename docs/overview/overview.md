@@ -78,15 +78,11 @@
   
   details[open] summary { margin-bottom: 10px; }
 </style>
+
 <div class="announcement" role="status" aria-live="polite">
-    <strong>[March 2]</strong> Reviewing Assignments Sent Out. Please check the softconf/START portal. Due: March 18, 2026.
+    <strong>[April 11]</strong> Paper decisions and reviews are available. Please reach out if you haven't received them yet or have any questions.
 </div>
-<div class="announcement" role="status" aria-live="polite">
-    <strong>[Feb 26]</strong> Paper Submissions Checklist released to help you finalize your paper submissions. Please check the <strong>Paper Submission Instructions Tab</strong>.
-</div>
-<div class="announcement" role="status" aria-live="polite">
-    <strong>[Feb 23]</strong> Gold Labels Released; <strong>Paper Submission Instructions tab</strong> released and deadline extended by 2 days upon request (please see forum post).
-</div>
+
 
 
 
@@ -95,6 +91,15 @@
 
 <details>
   <summary>View older announcements</summary>
+  <div class="announcement" role="status" aria-live="polite">
+    <strong>[March 2]</strong> Reviewing Assignments Sent Out. Please check the softconf/START portal. Due: March 18, 2026.
+</div>
+<div class="announcement" role="status" aria-live="polite">
+    <strong>[Feb 26]</strong> Paper Submissions Checklist released to help you finalize your paper submissions. Please check the <strong>Paper Submission Instructions Tab</strong>.
+</div>
+<div class="announcement" role="status" aria-live="polite">
+    <strong>[Feb 23]</strong> Gold Labels Released; <strong>Paper Submission Instructions tab</strong> released and deadline extended by 2 days upon request (please see forum post).
+</div>
   <div class="announcement" role="status" aria-live="polite">
   <strong>[Feb 20]</strong> Leaderboard Ranking Released; Post-Deadline-Submissions Scores Released! Please view Leaderboard tab for more details
 </div>
