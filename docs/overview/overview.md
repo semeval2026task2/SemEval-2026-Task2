@@ -78,10 +78,13 @@
   
   details[open] summary { margin-bottom: 10px; }
 </style>
-
 <div class="announcement" role="status" aria-live="polite">
-    <strong>[April 11]</strong> Paper decisions and reviews are available. Please reach out if you haven't received them yet or have any questions.
+   <strong>[IMPORTANT]</strong> Please find ACL 2026 Workshop Presenter Guide <a href="https://docs.google.com/presentation/d/1XTMSJ3Ot5uoKZNSVFRw1i0wSljYiXw0Spqy-Iv-UDzA/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">HERE</a>.
 </div>
+<div class="announcement" role="status" aria-live="polite">
+    The datasets are publicly released on our <a href="https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/datasets" target="_blank" rel="noopener noreferrer">GitHub</a>.
+</div>
+
 
 
 
@@ -91,6 +94,9 @@
 
 <details>
   <summary>View older announcements</summary>
+  <div class="announcement" role="status" aria-live="polite">
+    <strong>[April 11]</strong> Paper decisions and reviews are available. Please reach out if you haven't received them yet or have any questions.
+</div>
   <div class="announcement" role="status" aria-live="polite">
     <strong>[March 2]</strong> Reviewing Assignments Sent Out. Please check the softconf/START portal. Due: March 18, 2026.
 </div>
