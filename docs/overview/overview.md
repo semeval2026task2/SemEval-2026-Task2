@@ -22,6 +22,9 @@
 <hr style="margin:10px 0 14px">
 
 <div class="badges">
+<a href="/citation">
+  <img src="https://img.shields.io/badge/Citation-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Citation">
+</a>
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/">
     <img src="https://img.shields.io/badge/SemEval2026%20Task%202%20Website-blue?style=for-the-badge" alt="SemEval2026 Task 2 Website">
   </a>
@@ -31,7 +34,17 @@
   <a href="https://github.com/semeval2026task2/EmotionValArouTimeVariation2026">
     <img src="https://img.shields.io/badge/GitHub%20Repository-yellow?style=for-the-badge&logo=github" alt="GitHub Repository">
   </a>
+  <!-- NEW -->
+  
+<a href="https://download-directory.github.io/?url=https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/datasets" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/⬇ Download Dataset (ZIP)-2ea44f?style=for-the-badge" alt="Download Dataset">
+</a>
+<a href="https://download-directory.github.io/?url=https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/semeval2026-task2-eval" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/⬇ Download Evaluation Script (ZIP)-2ea44f?style=for-the-badge" alt="Download Evaluation Script">
+</a>
 </div>
+
+
 
 <hr style="margin:10px 0 14px">
 
@@ -79,21 +92,25 @@
   details[open] summary { margin-bottom: 10px; }
 </style>
 <div class="announcement" role="status" aria-live="polite">
-   <strong>[IMPORTANT]</strong> Please find ACL 2026 Workshop Presenter Guide <a href="https://docs.google.com/presentation/d/1XTMSJ3Ot5uoKZNSVFRw1i0wSljYiXw0Spqy-Iv-UDzA/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">HERE</a>.
+  🏆 <strong>We are happy to announce that we have won the Best Task Description Paper Award at SemEval 2026!</strong> Thank you to all participants, organizers, and the SemEval committee for making this happen.
 </div>
-<div class="announcement" role="status" aria-live="polite">
+
+
+
+
+
+
+
+
+
+<!-- <details>
+  <summary>View older announcements</summary>
+  <div class="announcement" role="status" aria-live="polite">
     The datasets are publicly released on our <a href="https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/datasets" target="_blank" rel="noopener noreferrer">GitHub</a>.
 </div>
-
-
-
-
-
-
-
-
-<details>
-  <summary>View older announcements</summary>
+  <div class="announcement" role="status" aria-live="polite">
+   <strong>[IMPORTANT]</strong> Please find ACL 2026 Workshop Presenter Guide <a href="https://docs.google.com/presentation/d/1XTMSJ3Ot5uoKZNSVFRw1i0wSljYiXw0Spqy-Iv-UDzA/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">HERE</a>.
+</div>
   <div class="announcement" role="status" aria-live="polite">
     <strong>[April 11]</strong> Paper decisions and reviews are available. Please reach out if you haven't received them yet or have any questions.
 </div>
@@ -157,10 +174,12 @@
     </a> 
    for instructions.
   </div>
-</details>
+</details> -->
 
 
-![](https://i.imgur.com/okG0fuV.png)
+
+
+  ![](https://i.imgur.com/okG0fuV.png)
 
 <p style="font-size: 0.9em; color: #555; margin-top: 0.2em;">
 Figure 1: Moving from traditional emotion assessments to psychologically and longitudinally grounded emotion assessments.
