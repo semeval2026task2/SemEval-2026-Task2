@@ -22,7 +22,7 @@
 <hr style="margin:10px 0 14px">
 
 <div class="badges">
-  <a href="/citation">
+  <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/citation">
     <img src="https://img.shields.io/badge/Citation-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Citation">
   </a>
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/">
