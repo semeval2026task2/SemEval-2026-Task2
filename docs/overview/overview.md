@@ -21,7 +21,7 @@
 <!-- Use an explicit <hr> with small margin (instead of markdown ---) -->
 <hr style="margin:10px 0 14px">
 
-<div class="badges">
+<div class="https://semeval2026task2.github.io/SemEval-2026-Task2/citation">
 <a href="/citation">
   <img src="https://img.shields.io/badge/Citation-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Citation">
 </a>
