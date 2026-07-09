@@ -15,10 +15,16 @@
   }
 </style>
 
+
+
+
 <!-- Use an explicit <hr> with small margin (instead of markdown ---) -->
 <hr style="margin:10px 0 14px">
 
 <div class="badges">
+<a href="/citation">
+  <img src="https://img.shields.io/badge/Citation-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Citation">
+</a>
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/">
     <img src="https://img.shields.io/badge/SemEval2026%20Task%202%20Website-blue?style=for-the-badge" alt="SemEval2026 Task 2 Website">
   </a>
@@ -28,7 +34,17 @@
   <a href="https://github.com/semeval2026task2/EmotionValArouTimeVariation2026">
     <img src="https://img.shields.io/badge/GitHub%20Repository-yellow?style=for-the-badge&logo=github" alt="GitHub Repository">
   </a>
+  <!-- NEW -->
+  
+<a href="https://download-directory.github.io/?url=https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/datasets" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/⬇ Download Dataset (ZIP)-2ea44f?style=for-the-badge" alt="Download Dataset">
+</a>
+<a href="https://download-directory.github.io/?url=https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/semeval2026-task2-eval" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/⬇ Download Evaluation Script (ZIP)-2ea44f?style=for-the-badge" alt="Download Evaluation Script">
+</a>
 </div>
+
+
 
 <hr style="margin:10px 0 14px">
 
@@ -75,6 +91,60 @@
   
   details[open] summary { margin-bottom: 10px; }
 </style>
+<div class="announcement" role="status" aria-live="polite">
+  🏆 <strong>We are happy to announce that we have won the Best Task Description Paper Award at SemEval 2026!</strong> Thank you to all participants, organizers, and the SemEval committee for making this happen.
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <details>
+  <summary>View older announcements</summary>
+  <div class="announcement" role="status" aria-live="polite">
+    The datasets are publicly released on our <a href="https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/datasets" target="_blank" rel="noopener noreferrer">GitHub</a>.
+</div>
+  <div class="announcement" role="status" aria-live="polite">
+   <strong>[IMPORTANT]</strong> Please find ACL 2026 Workshop Presenter Guide <a href="https://docs.google.com/presentation/d/1XTMSJ3Ot5uoKZNSVFRw1i0wSljYiXw0Spqy-Iv-UDzA/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">HERE</a>.
+</div>
+  <div class="announcement" role="status" aria-live="polite">
+    <strong>[April 11]</strong> Paper decisions and reviews are available. Please reach out if you haven't received them yet or have any questions.
+</div>
+  <div class="announcement" role="status" aria-live="polite">
+    <strong>[March 2]</strong> Reviewing Assignments Sent Out. Please check the softconf/START portal. Due: March 18, 2026.
+</div>
+<div class="announcement" role="status" aria-live="polite">
+    <strong>[Feb 26]</strong> Paper Submissions Checklist released to help you finalize your paper submissions. Please check the <strong>Paper Submission Instructions Tab</strong>.
+</div>
+<div class="announcement" role="status" aria-live="polite">
+    <strong>[Feb 23]</strong> Gold Labels Released; <strong>Paper Submission Instructions tab</strong> released and deadline extended by 2 days upon request (please see forum post).
+</div>
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Feb 20]</strong> Leaderboard Ranking Released; Post-Deadline-Submissions Scores Released! Please view Leaderboard tab for more details
+</div>
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Feb 14]</strong> Leaderboard Released! Please view Leaderboard tab for more details
+</div>
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Feb 9]</strong> Additional baseline metrics for Subtask 1 have been released. These updates are available in the <strong>Baselines</strong> tab; please note that these metrics are derived from the Linear(BERT) baseline.
+</div>
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Feb 7]</strong> Your scores are released individually to your team member's email who filled out the mandatory form. The leaderboard will be finalized and released later (tentatively Feb 13)
+</div>
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Feb 6]</strong> Due to technical issues, <strong> the scores leaderboard is delayed</strong>. We are working to release it by tomorrow <strong>(Feb 7)</strong>. Stay tuned!
+</div>
+
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Jan 27]</strong> System submission deadline extended to accommodate Sunday and Codabench downtime. <strong>New deadline: January 28</strong>
+</div>
+  <div class="announcement" role="status" aria-live="polite">
+  <strong>[Jan 8]</strong> Evaluation Data Updated in the <strong>Files</strong> section on Codabench named <code>TEST_RELEASE_5JAN2026</code>. </br> <strong>Note:</strong> Scores will be released along with the leaderboard.
+</div>
 
 <div class="announcement" role="status" aria-live="polite">
   <strong>[Jan 5, 2026] Evaluation Data & Baselines Released! and Evaluation Phase has Started!</strong> 
@@ -82,13 +152,9 @@
   For details, please check the <strong>Baselines</strong> and <strong>Test Data</strong> tabs.
 </div>
 
-<div class="announcement" role="status" aria-live="polite">
+  <div class="announcement" role="status" aria-live="polite">
   <strong>[Dec 17, 2025] Format Checker released!</strong> Please try submitting your predictions.zip with prediction CSV (check Submission Instruction for details). Evaluation phase will begin January 10, 2026. Keep an eye out for the evaluation data release shortly before that.
 </div>
-
-
-<details>
-  <summary>View older announcements</summary>
   <div class="announcement" role="status" aria-live="polite">
   <strong>[Dec 6, 2025] Evaluation Details released!</strong> Check it out at <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/evaluation">Evaluation</a>. Evaluation phase will begin January 10, 2026. Keep an eye out for the evaluation data release shortly before that.
 </div>
@@ -108,10 +174,12 @@
     </a> 
    for instructions.
   </div>
-</details>
+</details> -->
 
 
-![](https://i.imgur.com/okG0fuV.png)
+
+
+  ![](https://i.imgur.com/okG0fuV.png)
 
 <p style="font-size: 0.9em; color: #555; margin-top: 0.2em;">
 Figure 1: Moving from traditional emotion assessments to psychologically and longitudinally grounded emotion assessments.

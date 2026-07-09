@@ -6,70 +6,153 @@ import { useNavigate, useParams } from "react-router-dom";
 /* ---------- Types ---------- */
 export interface NavItem {
   title: string;
-  file: string;   // markdown path
-  slug: string;   // url path segment
+  file: string;
+  slug: string;
   children?: NavItem[];
 }
 
 interface DocumentationSidebarProps {
   isOpen: boolean;
   onClose: () => void;
-  onSelectFile: (file: string) => void; // kept for compatibility; unused
+  onSelectFile: (file: string) => void;
   items: NavItem[];
-  activeFile: string;                   // kept for compatibility; unused
+  activeFile: string;
 }
 
-/* ---------- Your nav tree ---------- */
+/* ---------- Nav tree ---------- */
 export const navItems: NavItem[] = [
-  { title: "Overview",            file: "/docs/overview/overview.md",     slug: "overview" },
-  { title: "Getting Started",     file: "/docs/participate.md",           slug: "getting-started" },
-  { title: "Important Dates",     file: "/docs/important-dates.md",       slug: "important-dates" },
-  { title: "Tasks",               file: "/docs/tasks/tasks.md",           slug: "tasks" },
-  { title: "Data",                file: "",    slug: "data", children: [
-    { title: "Training Data",                file: "/docs/data/data-overview.md",    slug: "training-data" },
-    { title: "Test Data",                file: "/docs/data/test-data.md",    slug: "test-data" },
-  ] },
-  
-  
-  
-  { title: "Submission Instructions", file: "/docs/submission-instructions.md", slug: "submission-instructions" },
-  { title: "Evaluation",                file: "",    slug: "evaluation", children: [
-    { title: "Evaluation",          file: "/docs/evaluation/evaluation.md", slug: "evaluation" },
-    { title: "Baselines",                file: "/docs/data/baselines.md",    slug: "baselines" },
-  ] },
-  
-  { title: "Resources",           file: "/docs/resources.md",             slug: "resources" },
-  { title: "Terms and Conditions",file: "/docs/terms-and-conditions.md",  slug: "terms-and-conditions" },
-  { title: "Organizers",          file: "/docs/organizers.md",            slug: "organizers" },
+  { title: "Overview",    file: "/docs/overview/overview.md", slug: "overview" },
+  { title: "Citation", file: "/docs/citation.md", slug: "citation" },
+  { title: "Leaderboard", file: "/docs/leaderboard.md",       slug: "leaderboard" },
+  {
+    title: "Archived",
+    file: "",
+    slug: "archived",
+    children: [
+      { title: "Getting Started",               file: "/docs/participate.md",                   slug: "getting-started" },
+      { title: "Important Dates",               file: "/docs/important-dates.md",               slug: "important-dates" },
+      { title: "Tasks",                         file: "/docs/tasks/tasks.md",                   slug: "tasks" },
+      {
+        title: "Data",
+        file: "",
+        slug: "data",
+        children: [
+          { title: "Training Data", file: "/docs/data/data-overview.md", slug: "training-data" },
+          { title: "Test Data",     file: "/docs/data/test-data.md",     slug: "test-data" },
+        ],
+      },
+      { title: "Submission Instructions",       file: "/docs/submission-instructions.md",       slug: "submission-instructions" },
+      { title: "Paper Submission Instructions", file: "/docs/paper-submission-instructions.md", slug: "paper-submission-instructions" },
+      {
+        title: "Evaluation",
+        file: "",
+        slug: "evaluation",
+        children: [
+          { title: "Evaluation", file: "/docs/evaluation/evaluation.md", slug: "evaluation" },
+          { title: "Baselines",  file: "/docs/data/baselines.md",        slug: "baselines" },
+        ],
+      },
+      { title: "Resources",            file: "/docs/resources.md",            slug: "resources" },
+      { title: "Terms and Conditions", file: "/docs/terms-and-conditions.md", slug: "terms-and-conditions" },
+      { title: "Organizers",           file: "/docs/organizers.md",           slug: "organizers" },
+    ],
+  },
 ];
 
+/* ---------- slugToFile: now handles all depths ---------- */
+function flattenItems(items: NavItem[]): NavItem[] {
+  return items.flatMap(item =>
+    item.children ? [item, ...flattenItems(item.children)] : [item]
+  );
+}
+
 export const slugToFile: Record<string, string> = Object.fromEntries(
-  navItems.flatMap((item) => {
-    // 1. Start with the item itself
-    const allItems = [item];
-    // 2. If it has children, add them to the list
-    if (item.children) {
-      allItems.push(...item.children);
-    }
-    return allItems;
-  }).map((i) => [i.slug, i.file]) // Map every item (parent & child) to its file
+  flattenItems(navItems).map(i => [i.slug, i.file])
 );
 
-/* ---------- Sidebar component ---------- */
-const DocumentationSidebar = ({
-  isOpen,
-  onClose,
-  items,
-}: DocumentationSidebarProps) => {
-  // If you later add collapsible parents, this controls which parent is open.
+/* ---------- Recursive child list ---------- */
+interface ChildListProps {
+  items: NavItem[];
+  depth: number;
+  currentSlug: string;
+  navigate: (path: string) => void;
+  onClose: () => void;
+}
+const depthPadding: Record<number, string> = {
+  1: "pl-8",
+  2: "pl-14",
+  3: "pl-20",
+};
+const ChildList = ({ items, depth, currentSlug, navigate, onClose }: ChildListProps) => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const padding = depthPadding[depth] ?? "pl-20";
 
+  return (
+    <ul>
+      {items.map((item, index) => {
+        const hasChildren = !!item.children?.length;
+        const isExpanded = expandedIndex === index;
+        const isActive = !hasChildren && item.slug === currentSlug;
+
+        return (
+          <li key={item.slug}>
+            <div
+              className={`
+                flex items-center pr-4 py-2.5 text-base cursor-pointer transition-colors
+                ${padding}
+                ${isActive
+                  ? "bg-nav-hover font-medium text-foreground"
+                  : "text-muted-foreground hover:bg-nav-hover hover:text-foreground"}
+              `}
+              onClick={e => {
+                e.preventDefault();
+                if (hasChildren) {
+                  setExpandedIndex(prev => (prev === index ? null : index));
+                } else {
+                  navigate(`/${item.slug}`);
+                  onClose();
+                }
+              }}
+            >
+              {hasChildren && (
+                <ChevronRight
+                  size={14}
+                  className={`mr-2 shrink-0 transition-transform duration-200 ${isExpanded ? "rotate-90" : ""}`}
+                />
+              )}
+              {item.title}
+            </div>
+
+            {hasChildren && (
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  isExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <ChildList
+                  items={item.children!}
+                  depth={depth + 1}
+                  currentSlug={currentSlug}
+                  navigate={navigate}
+                  onClose={onClose}
+                />
+              </div>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
+/* ---------- Sidebar ---------- */
+const DocumentationSidebar = ({ isOpen, onClose, items }: DocumentationSidebarProps) => {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const navigate = useNavigate();
-  const { slug: currentSlug = "overview" } = useParams(); // exact route slug (basename handled by Router)
+  const { slug: currentSlug = "overview" } = useParams();
 
   const handleTopLevelClick = (index: number, item: NavItem) => {
-    const hasChildren = !!item.children?.length;
-    if (hasChildren) {
+    if (item.children?.length) {
       setExpandedIndex(prev => (prev === index ? null : index));
     } else {
       navigate(item.slug ? `/${item.slug}` : "/");
@@ -79,7 +162,6 @@ const DocumentationSidebar = ({
 
   return (
     <>
-      {/* Mobile overlay */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
@@ -87,7 +169,6 @@ const DocumentationSidebar = ({
         />
       )}
 
-      {/* Sidebar */}
       <aside
         className={`
           fixed md:static top-0 left-0 h-screen md:h-screen
@@ -97,7 +178,7 @@ const DocumentationSidebar = ({
           flex flex-col
         `}
       >
-        <div className="px-6 pt-6 pb-4 flex flex-col gap-1 select-none">
+        <div className="px-6 pt-6 pb-4 flex flex-col gap-1">
           <span className="font-extrabold text-xl md:text-2xl leading-tight tracking-tight">
             SemEval&nbsp;2026 Task 2
           </span>
@@ -106,28 +187,20 @@ const DocumentationSidebar = ({
           </span>
         </div>
 
-        {/* Navigation */}
         <nav className="flex-1 overflow-y-auto">
           <ul className="py-0">
             {items.map((item, index) => {
               const hasChildren = !!item.children?.length;
               const isExpanded = expandedIndex === index;
-
-              // ✅ Leaves: active when their slug matches the current route slug
-              // ✅ Parents: show "active" style only when expanded
-              const isSelected = hasChildren
-                ? isExpanded
-                : item.slug === currentSlug;
-
-              const containerClasses = `
-                flex items-center px-4 py-2 cursor-pointer transition-colors
-                ${isSelected ? "bg-nav-active text-primary-foreground" : "hover:bg-nav-hover"}
-              `;
+              const isSelected = hasChildren ? isExpanded : item.slug === currentSlug;
 
               return (
                 <li key={item.slug}>
                   <div
-                    className={containerClasses}
+                    className={`
+                      flex items-center px-4 py-2 cursor-pointer transition-colors
+                      ${isSelected ? "bg-nav-active text-primary-foreground" : "hover:bg-nav-hover"}
+                    `}
                     onClick={() => handleTopLevelClick(index, item)}
                   >
                     {hasChildren && (
@@ -140,35 +213,19 @@ const DocumentationSidebar = ({
                   </div>
 
                   {hasChildren && (
-                    <ul
-                      className={`
-                        overflow-hidden transition-all duration-300 ease-in-out
-                        ${isExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
-                      `}
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        isExpanded ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+                      }`}
                     >
-                      {item.children!.map(child => {
-                        const childActive = child.slug === currentSlug; // slug-based
-                        return (
-                          <li key={child.slug}>
-                            <a
-                              href={`/${child.slug}`}
-                              className={`block pl-10 pr-4 py-2.5 text-base transition-colors ${
-                                childActive
-                                  ? "bg-nav-hover"
-                                  : "text-muted-foreground hover:bg-nav-hover hover:text-foreground"
-                              }`}
-                              onClick={e => {
-                                e.preventDefault();
-                                navigate(`/${child.slug}`);
-                                onClose();
-                              }}
-                            >
-                              {child.title}
-                            </a>
-                          </li>
-                        );
-                      })}
-                    </ul>
+                      <ChildList
+                        items={item.children!}
+                        depth={1}
+                        currentSlug={currentSlug}
+                        navigate={navigate}
+                        onClose={onClose}
+                      />
+                    </div>
                   )}
                 </li>
               );
