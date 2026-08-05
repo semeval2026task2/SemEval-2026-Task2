@@ -21,8 +21,8 @@ import Leaderboard from "../components/Leaderboard";
 
 // When slug === "leaderboard", render the component directly
 // instead of fetching a markdown file:
-{slug === "leaderboard" ? (
+<!-- {slug === "leaderboard" ? (
   <Leaderboard />
 ) : (
   <MarkdownRenderer file={slugToFile[slug]} />
-)}
+)} -->

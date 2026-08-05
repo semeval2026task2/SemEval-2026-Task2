@@ -34,9 +34,9 @@
   <a href="https://github.com/semeval2026task2/EmotionValArouTimeVariation2026">
     <img src="https://img.shields.io/badge/GitHub%20Repository-yellow?style=for-the-badge&logo=github" alt="GitHub Repository">
   </a>
-  <a href="https://download-directory.github.io/?url=https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/datasets" target="_blank" rel="noopener noreferrer">
+  <!-- <a href="https://download-directory.github.io/?url=https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/datasets" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/⬇ Download Dataset (ZIP)-2ea44f?style=for-the-badge" alt="Download Dataset">
-  </a>
+  </a> -->
   <a href="https://download-directory.github.io/?url=https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/semeval2026-task2-eval" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/⬇ Download Evaluation Script (ZIP)-2ea44f?style=for-the-badge" alt="Download Evaluation Script">
   </a>
