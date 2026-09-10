@@ -1,6 +1,22 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Upload } from "lucide-react";
 import { parseWorkbook, ParsedSheet, ParsedTable, ColDef, RowData } from "../hooks/useLeaderboard";
+import { systems } from "@/data/systems";
+
+const GOOGLE_SHEET_PREVIEW_URL =
+  "https://docs.google.com/spreadsheets/d/12qG8JXyN3Ulra8vS-FGL717J_FovKiLrjEXPDCB8ApQ/preview?rm=minimal&widget=true&headers=false";
+
+const normalizeTeamName = (name: string) => name.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+const ORIGINAL_TASK_TEAMS = new Set(
+  [
+    ...systems.filter((system) => system.originalTaskParticipant).map((system) => system.team),
+    // Names used in the original leaderboard that differ from system-paper team names.
+    "YNU",
+    "Student Of University Information Of Technology",
+    "mcmaster4z03",
+  ].map(normalizeTeamName)
+);
 
 /* ── Color scale ── */
 function getColor(value: number, min: number, max: number, higherIsBetter: boolean): string {
@@ -97,6 +113,8 @@ function DataTable({ table }: { table: ParsedTable }) {
               teamName.startsWith("linear") ||
               teamName === "rand";
             const isDimmed = tag === "WITHDRAWN" || tag === "DISQUALIFIED";
+            const isOriginalTaskParticipant =
+              !isBaseline && ORIGINAL_TASK_TEAMS.has(normalizeTeamName(teamName));
 
             return (
               <tr
@@ -104,9 +122,14 @@ function DataTable({ table }: { table: ParsedTable }) {
                 className={`border-t border-border transition-colors
                   ${isDimmed ? "opacity-40" : ""}
                   ${isBaseline ? "bg-muted/30 italic" : "hover:bg-muted/30"}
+                  ${isOriginalTaskParticipant ? "bg-sky-50/80" : ""}
                 `}
               >
-                <td className="px-3 py-2 font-medium whitespace-nowrap sticky left-0 bg-background z-10">
+                <td
+                  className={`px-3 py-2 font-medium whitespace-nowrap sticky left-0 z-10 ${
+                    isOriginalTaskParticipant ? "bg-sky-50" : "bg-background"
+                  }`}
+                >
                   <span>{teamName}</span>
                   <TagBadge tag={tag} />
                 </td>
@@ -186,21 +209,20 @@ export default function Leaderboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/SemEval2026_Task2_Scores_Leaderboard.xlsx")
-      .then((res) => {
+    const base = import.meta.env.BASE_URL.replace(/\/$/, ""); // strips trailing slash
+    fetch(`${base}/SemEval2026_Task2_Scores_Leaderboard.xlsx`)
+        .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.arrayBuffer();
-      })
-      .then((buf) => {
+        })
+        .then((buf) => {
         const parsed = parseWorkbook(buf);
         setSheets(parsed.filter((s) => s.tables.length > 0));
         setActiveSheet(0);
-      })
-      .catch((err) => {
-        setError("Failed to load leaderboard data: " + err.message);
-      })
-      .finally(() => setLoading(false));
-  }, []);
+        })
+        .catch((err) => setError("Failed to load leaderboard data: " + err.message))
+        .finally(() => setLoading(false));
+    }, []);
 
   // remove the handleFile callback and fileName state entirely
 
@@ -209,17 +231,9 @@ export default function Leaderboard() {
       <div className="mb-6">
         <h1 className="text-5xl font-bold">Leaderboard</h1>
         <p className="text-sm text-muted-foreground mt-2">
-    Full leaderboard with all detailed metrics is also available on{" "}
-    <a
-      href="https://docs.google.com/spreadsheets/d/12qG8JXyN3Ulra8vS-FGL717J_FovKiLrjEXPDCB8ApQ/edit?usp=sharing"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="font-semibold underline hover:text-foreground transition-colors"
-    >
-      Google Sheets
-    </a>
-    .
-  </p>
+          Teams from the original SemEval-2026 shared task are labeled below. New scores may be added as the community
+          continues working on EmoVAL.
+        </p>
       </div>
 
       {loading && (
@@ -279,9 +293,30 @@ export default function Leaderboard() {
               <TagBadge tag="DISQUALIFIED" />
               <TagBadge tag="POST-DEADLINE" />
             </div>
+            <div className="flex items-center gap-1.5 font-semibold">
+              <span className="inline-block h-4 w-4 rounded border border-sky-200 bg-sky-50" />
+              ORIGINAL TASK PARTICIPANT
+            </div>
           </div>
         </>
       )}
+
+      <section className="mt-10">
+        <div className="mb-3">
+          <h2 className="text-2xl font-bold">Detailed metrics spreadsheet</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Browse the complete leaderboard and its detailed metric tabs in this read-only view.
+          </p>
+        </div>
+        <div className="overflow-hidden rounded-xl border border-border bg-white shadow-sm">
+          <iframe
+            src={GOOGLE_SHEET_PREVIEW_URL}
+            title="EmoVAL detailed leaderboard metrics"
+            loading="lazy"
+            className="h-[70vh] min-h-[560px] w-full"
+          />
+        </div>
+      </section>
     </div>
   );
 }

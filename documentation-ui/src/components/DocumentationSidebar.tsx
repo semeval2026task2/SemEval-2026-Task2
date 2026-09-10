@@ -24,10 +24,13 @@ export const navItems: NavItem[] = [
   { title: "Overview",    file: "/docs/overview/overview.md", slug: "overview" },
   { title: "Citation", file: "/docs/citation.md", slug: "citation" },
   { title: "Leaderboard", file: "/docs/leaderboard.md",       slug: "leaderboard" },
+
+      { title: "Get Data", file: "/docs/data/get-data.md", slug: "get-data" },
+      { title: "Get Models", file: "/docs/data/get-models.md", slug: "get-models" },
   {
-    title: "Archived",
+    title: "SemEval2026 Participant Info",
     file: "",
-    slug: "archived",
+    slug: "participant-info",
     children: [
       { title: "Getting Started",               file: "/docs/participate.md",                   slug: "getting-started" },
       { title: "Important Dates",               file: "/docs/important-dates.md",               slug: "important-dates" },
@@ -54,9 +57,10 @@ export const navItems: NavItem[] = [
       },
       { title: "Resources",            file: "/docs/resources.md",            slug: "resources" },
       { title: "Terms and Conditions", file: "/docs/terms-and-conditions.md", slug: "terms-and-conditions" },
-      { title: "Organizers",           file: "/docs/organizers.md",           slug: "organizers" },
+      
     ],
   },
+  { title: "Organizers",           file: "/docs/organizers.md",           slug: "organizers" },
 ];
 
 /* ---------- slugToFile: now handles all depths ---------- */
@@ -179,11 +183,18 @@ const DocumentationSidebar = ({ isOpen, onClose, items }: DocumentationSidebarPr
         `}
       >
         <div className="px-6 pt-6 pb-4 flex flex-col gap-1">
-          <span className="font-extrabold text-xl md:text-2xl leading-tight tracking-tight">
-            SemEval&nbsp;2026 Task 2
-          </span>
+          <div className="flex items-center gap-3">
+            <img
+              src={`${import.meta.env.BASE_URL}favicon.svg`}
+              alt="EmoVAL affect grid logo"
+              className="h-10 w-10 shrink-0"
+            />
+            <span className="font-extrabold text-xl md:text-2xl leading-tight tracking-tight">
+              EmoVAL
+            </span>
+          </div>
           <span className="text-sm md:text-base font-semibold leading-snug py-8">
-            Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
+            SemEval 2026 Task 2: Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
           </span>
         </div>
 
@@ -232,6 +243,22 @@ const DocumentationSidebar = ({ isOpen, onClose, items }: DocumentationSidebarPr
             })}
           </ul>
         </nav>
+
+        <div className="shrink-0 px-4 py-4">
+          <a
+            href="https://2026.aclweb.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="ACL 2026 — San Diego, July 2–7"
+            className="block overflow-hidden rounded transition-opacity hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-ring"
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}images/logos/acl-logo-2026.png`}
+              alt="ACL 2026, San Diego, July 2–7"
+              className="block h-auto w-full"
+            />
+          </a>
+        </div>
       </aside>
     </>
   );
