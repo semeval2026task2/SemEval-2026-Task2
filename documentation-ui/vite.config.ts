@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/SemEval-2026-Task2/" : "/", 
+  base: mode === "production" ? "/SemEval-2026-Task2/" : "/",
   appType: "spa",
   server: {
     host: "::",
