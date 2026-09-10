@@ -103,6 +103,16 @@ export default function DatasetConsentDownload() {
           </div>
         )}
       </div>
+
+      <section className="mb-8 rounded-lg border border-amber-200 bg-amber-50 px-5 py-4">
+        <h2 className="mb-2 text-xl font-bold">Dataset Usage Restrictions</h2>
+        <ul className="list-disc space-y-1 pl-5 text-sm leading-relaxed text-foreground">
+          <li>Datasets should be used only for scientific or research purposes.</li>
+          <li>Any other use is explicitly prohibited.</li>
+          <li>Datasets must not be redistributed or shared with third parties.</li>
+          <li>Interested parties should be directed to the official website.</li>
+        </ul>
+      </section>
     </div>
   );
 }
