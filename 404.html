@@ -1,10 +1,45 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Redirecting…</title>
-<script>
-var pathSegmentsToKeep = 1; // keep "/SemEval-2026-Task2"
-var l = window.location;
-var repo = l.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/');
-var rest = l.pathname.slice(repo.length + 1);
-var search = l.search ? '&' + l.search.slice(1).replace(/&/g,'~and~') : '';
-l.replace(repo + '/?/' + rest.replace(/&/g,'~and~') + search + l.hash);
-</script>
-</head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      /* Convert "?/route/segments&..." back to "/route/segments" */
+      (function(l){
+        if (l.search.startsWith('?/')) {
+          const decoded = l.search
+            .slice(2)                           // drop "?/"
+            .split('&')
+            .map(s => s.replace(/~and~/g, '&')) // undo encoding (see 404.html)
+            .join('?');
+          const newUrl = l.pathname.replace(/\/$/, '') + '/' + decoded + l.hash;
+          window.history.replaceState(null, null, newUrl);
+        }
+      })(window.location);
+      </script>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <title>SemEval 2026 Task 2</title>
+    <meta name="description" content="SemEval 2026 Task 2: Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays" />
+    <meta name="author" content="Lovable" />
+
+    <meta property="og:title" content="SemEval 2026" />
+    <meta property="og:description" content="SemEval 2026 Task 2: Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="" />
+    <script type="module" crossorigin src="/assets/index-CV_KzmIA.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-wvZ-4aMh.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+  
+
+</html>
