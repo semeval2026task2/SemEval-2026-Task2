@@ -2,7 +2,7 @@
 
 All submissions are evaluated using **Pearson r** and **Mean Absolute Error (MAE)**, applied in subtask-specific ways. Each subtask requires predictions for two outcomes: **valence** and **arousal**.
 
-Evaluation script can be found on [Github](https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/semeval2026-task2-eval)
+Evaluation script can be found on [Github](https://github.com/semeval2026task2/EmotionValArouTimeVariation2026/tree/main/semeval2026-task2-eval). The metrics and their motivation are discussed in detail in the [task paper on ACL Anthology](https://aclanthology.org/2026.semeval-1.451/).
 
 ---
 

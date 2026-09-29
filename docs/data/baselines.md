@@ -1,5 +1,7 @@
 # Baselines (Released Jan 5, 2025)
 ---
+
+*Baseline results and comparisons with participating systems are reported in the [task paper on ACL Anthology](https://aclanthology.org/2026.semeval-1.451/).*
 We use the following 2 methods for our baselines:
 
 1. **L2 penalized linear layer on BERT:**

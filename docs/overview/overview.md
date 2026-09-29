@@ -25,6 +25,9 @@
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/citation">
     <img src="https://img.shields.io/badge/Citation-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Citation">
   </a>
+  <a href="https://aclanthology.org/2026.semeval-1.451/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Task%20Paper-ACL%20Anthology-ed1c24?style=for-the-badge" alt="Task Paper on ACL Anthology">
+  </a>
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/">
     <img src="https://img.shields.io/badge/SemEval2026%20Task%202%20Website-blue?style=for-the-badge" alt="SemEval2026 Task 2 Website">
   </a>
@@ -90,7 +93,7 @@
   details[open] summary { margin-bottom: 10px; }
 </style>
 <div class="announcement" role="status" aria-live="polite">
-  🏆 <strong>We are happy to announce that we have won the Best Task Description Paper Award at SemEval 2026!</strong> Thank you to all participants, organizers, and the SemEval committee for making this happen.
+  🏆 <strong>We are happy to announce that we have won the Best Task Award at SemEval 2026!</strong> Thank you to all participants, organizers, and the SemEval committee for making this happen. <a href="https://aclanthology.org/2026.semeval-1.451/" target="_blank" rel="noopener noreferrer">Read the paper</a>
 </div>
 
 

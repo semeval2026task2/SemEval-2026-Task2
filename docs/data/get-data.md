@@ -52,6 +52,8 @@ The training and evaluation data consist of 5,285 longitudinal texts (“ecologi
 
 The way we describe and assign emotion words/labels to our feelings is a rich psychological process that is diagnostic of how our past experiences influence our current perception of how we relate to the world. Therefore, we include the "feeling words" data as well in our training and evaluation sets. Additionally, this increases the number of examples. *We suggest participants to consider modeling feeling-words separately or jointly with the essays.*
 
+For full details on data collection and the dataset, see the [task paper on ACL Anthology](https://aclanthology.org/2026.semeval-1.451/).
+
 The study and release of its data were approved by the SBU Institutional Review Board. All users consented to their individual essays and EMA scores being released openly.
 
 ## Data Format

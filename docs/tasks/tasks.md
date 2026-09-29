@@ -1,6 +1,8 @@
 # Tasks
 ---
 
+*Full task definitions and results are described in the [task paper on ACL Anthology](https://aclanthology.org/2026.semeval-1.451/).*
+
 <div style="text-align:center;margin:16px 0;">
   <img src="https://i.imgur.com/KXHgQ9t.png"
        alt="Figure 1"

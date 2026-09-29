@@ -14,7 +14,7 @@
 
 3. Please run your submissions through [ACL pubcheck](https://github.com/acl-org/aclpubcheck) and ensure there are no errors.
 
-4. Please use the following BibTeX for citing the task description paper:
+4. Please use the following BibTeX for citing the [task description paper](https://aclanthology.org/2026.semeval-1.451/):
 
 ```bibtex
 @inproceedings{soni-etal-2026-semeval,
@@ -31,7 +31,8 @@
             Mohammad, Saif M.",
   booktitle = "Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)",
   year = "2026",
-  publisher = "Association for Computational Linguistics"
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2026.semeval-1.451/"
 }
 ```
 **Submission Link:** [https://softconf.com/acl2026/semeval2026/user/scmd.cgi?scmd=submitPaperCustom&pageid=0](https://softconf.com/acl2026/semeval2026/user/scmd.cgi?scmd=submitPaperCustom&pageid=0)
