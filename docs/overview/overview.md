@@ -25,9 +25,9 @@
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/citation">
     <img src="https://img.shields.io/badge/Citation-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Citation">
   </a>
-  <a href="https://aclanthology.org/2026.semeval-1.451/" target="_blank" rel="noopener noreferrer">
+  <!-- <a href="https://aclanthology.org/2026.semeval-1.451/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Task%20Paper-ACL%20Anthology-ed1c24?style=for-the-badge" alt="Task Paper on ACL Anthology">
-  </a>
+  </a> -->
   <a href="https://semeval2026task2.github.io/SemEval-2026-Task2/">
     <img src="https://img.shields.io/badge/SemEval2026%20Task%202%20Website-blue?style=for-the-badge" alt="SemEval2026 Task 2 Website">
   </a>
