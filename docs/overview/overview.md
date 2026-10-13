@@ -180,7 +180,13 @@
 
 
 
-  ![](https://i.imgur.com/okG0fuV.png)
+<div style="padding: 2.5em 8% 2em;">
+<p style="font-size: 1.9em; line-height: 1.25; margin: 0 0 1.6em; color: #000;">
+<strong>SemEval-2026 Task 2:</strong> Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
+</p>
+
+<img src="images/SemEval-2026_Task_2_v2.png" alt="Traditional emotion assessment compared with psychologically and longitudinally grounded emotion assessment" style="width: 100%; height: auto; margin: 0;">
+</div>
 
 <p style="font-size: 0.9em; color: #555; margin-top: 0.2em;">
 Figure 1: Moving from traditional emotion assessments to psychologically and longitudinally grounded emotion assessments.
