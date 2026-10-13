@@ -180,7 +180,7 @@
 
 
 
-<div style="padding: 2.5em 8% 2em;">
+<div style="padding: 2.5em 0 2em;">
 <p style="font-size: 1.9em; line-height: 1.25; margin: 0 0 1.6em; color: #000;">
 <strong>SemEval-2026 Task 2:</strong> Predicting Variation in Emotional Valence and Arousal over Time from Ecological Essays
 </p>
